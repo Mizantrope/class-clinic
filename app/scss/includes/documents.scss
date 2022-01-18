@@ -1,0 +1,27 @@
+.documents {
+    h2 + .text {
+        margin-top: 30px;
+    }
+
+    .text {
+        &:not(:first-child) {
+            margin-top: 30px;
+        }
+    }
+
+    .link--block {
+        margin-top: 10px;
+    }
+
+    @media (max-width: 767px) {
+        h2 + .text {
+            margin-top: 20px;
+        }
+    
+        .text {
+            &:not(:first-child) {
+                margin-top: 20px;
+            }
+        }
+    }
+}

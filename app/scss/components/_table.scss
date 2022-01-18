@@ -1,0 +1,77 @@
+table {
+    width: 100%;
+    padding: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    tr {
+        vertical-align: top;
+
+        &:first-child {
+            td {
+                padding-top: 0;
+                border-top: 0;
+            }
+        }
+
+        &:last-child {
+            td {
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    td {
+        padding: 20px 0;
+        border-top: 1px solid $line-bg;
+
+        @extend %text;
+    }
+
+    &.structures {
+        td {
+            &:first-child {
+                width: 160px;
+                padding-right: 30px;
+                box-sizing: content-box;
+            }
+        }
+
+        @media (max-width: 991px) {
+            td {
+                &:first-child {
+                    width: 186px;
+                }
+            }
+        }
+
+        @media (max-width: 575px) {
+            td {
+                &:first-child {
+                    width: 120px;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+
+    &.schedule__table {
+        margin-top: 30px;
+
+        td {
+            padding: 10px 0;
+
+            &:last-child {
+                text-align: right;
+            }
+        }
+
+        @media (max-width: 767px) {
+            margin-top: 20px;
+
+            td {
+                padding: 5px 0;
+            }
+        }
+    }
+}

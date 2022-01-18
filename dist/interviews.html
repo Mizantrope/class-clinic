@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Медицинский центр в Калининграде - клиника Class Clinic</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!-- jquery ui slider -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.min.css">
+
+        <link rel="stylesheet" href="./css/style.min.css">
+    </head>
+    <body>
+        
+        <div id="layout">
+
+            <!-- Swipe -->
+            <div class="swipe">
+                <div class="swipe__content">
+                    <div class="container">
+                        <div class="swipe__menu menu">
+                            <!-- First screen -->
+                            <ul class="menu__list">
+                                <li class="menu__item menu__item--dropdown">
+                                    <a href="branches.html" class="menu__link">
+                                        Отделения
+                                    </a>
+                                    <svg class="menu__icon" data-name="swipe-first-lvl" viewBox="0 0 28 28">
+                                        <use href="#icon-arrow"></use>
+                                    </svg>
+                                </li>
+                                <li class="menu__item menu__item--dropdown">
+                                    <a href="doctors.html" class="menu__link">
+                                        Врачи
+                                    </a>
+                                    <svg class="menu__icon" data-name="swipe-first-lvl" viewBox="0 0 28 28">
+                                        <use href="#icon-arrow"></use>
+                                    </svg>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="cost.html" class="menu__link">
+                                        Стоимость первичного приёма
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="reviews.html" class="menu__link">
+                                        Отзывы
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="faq.html" class="menu__link">
+                                        Вопрос-ответ
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="contacts.html" class="menu__link">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="menu__list menu__list--secondary">
+                                <li class="menu__item">
+                                    <a href="insurance.html" class="menu__link link link--gray">Лечение за счёт страховой компании</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="corporate-service.html" class="menu__link link link--gray">Корпоративное обслуживание</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="interiews.html" class="menu__link link link--gray">Интервью с врачами</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="news.html" class="menu__link link link--gray">Новости</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="about.html" class="menu__link link link--gray">О клинике</a>
+                                </li>
+                            </ul>
+
+                            <div class="swipe__info">
+                                <a href="zapis.html" class="btn btn--primary">Записаться на приём</a>
+                                <div class="swipe__info-section">
+                                    <h4 class="swipe__info-t">Телефон</h4>
+                                    <a href="tel:+74012334455" class="link link--gray">+7 (4012) <span class="highlight">33-44-55</span></a>
+                                </div>
+                                <div class="swipe__info-section">
+                                    <h4 class="swipe__info-t">Адрес</h4>
+                                    <a class="link" href="contacts.html" >Калининград, ул. Партизана Железняка, 1</a>
+                                </div>
+                                <div class="swipe__info-section">
+                                    <h4 class="swipe__info-t">Режим работы</h4>
+                                    <p>пн-пт: с 8:00 до 20:00</p>
+                                    <p>сб: с 9:00 до 17:00</p>
+                                    <p>вс: с 9:00 до 17:00 <span class="text-gray">(только запись, врачи не ведут приём)</span></p>
+                                </div>
+                                <div class="swipe__info-section">
+                                    <a href="search.html" class="link link--search">
+                                        <svg class="link__icon" viewBox="0 0 40 40">
+                                            <use href="#icon-search-fill"></use>
+                                        </svg>
+                                        Поиск по сайту
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- / First screen -->
+
+                            <!-- Swipe for branches -->
+                            <div class="menu__content">
+                                <div class="menu__content-inner container">
+                                    <h2 class="menu__t">
+                                        <svg class="menu__icon" data-name="swipe-menu-back" viewBox="0 0 28 28">
+                                            <use href="#icon-back"></use>
+                                        </svg>
+                                        Отделения
+                                    </h2>
+                                    <ul class="menu__list">
+                                        <li class="menu__item">
+                                            <a href="branch-detail.html" class="menu__link">Проктология</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="branch-detail.html" class="menu__link">Урология</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="branch-detail.html" class="menu__link">Гинекология</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="branch-detail.html" class="menu__link">Неврология</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="branch-detail.html" class="menu__link">Дерматология</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="branch-detail.html" class="menu__link">Косметология</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="branch-detail.html" class="menu__link">Трихология</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="branch-detail.html" class="menu__link">Гастроэнтерология</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="branch-detail.html" class="menu__link">Терапия</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="branch-detail.html" class="menu__link">УЗИ</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="branch-detail.html" class="menu__link">Рефлексотерапия</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="branch-detail.html" class="menu__link">Физиотерапия</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="branch-detail.html" class="menu__link">Сдать анализы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Swipe for doctors -->
+                            <div class="menu__content">
+                                <div class="menu__content-inner container">
+                                    <h2 class="menu__t">
+                                        <svg class="menu__icon" data-name="swipe-menu-back" viewBox="0 0 28 28">
+                                            <use href="#icon-back"></use>
+                                        </svg>
+                                        Врачи
+                                    </h2>
+                                    <ul class="menu__list">
+                                        <li class="menu__item">
+                                            <a href="doctors.html" class="menu__link">
+                                                Проктологи
+                                            </a>
+                                            <svg class="menu__icon" data-name="swipe-second-lvl" viewBox="0 0 28 28">
+                                                <use href="#icon-arrow"></use>
+                                            </svg>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="doctors.html" class="menu__link">
+                                                Урологи
+                                            </a>
+                                            <svg class="menu__icon" data-name="swipe-second-lvl" viewBox="0 0 28 28">
+                                                <use href="#icon-arrow"></use>
+                                            </svg>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="doctors.html" class="menu__link">
+                                                Гинекологи
+                                            </a>
+                                            <svg class="menu__icon" data-name="swipe-second-lvl" viewBox="0 0 28 28">
+                                                <use href="#icon-arrow"></use>
+                                            </svg>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="doctors.html" class="menu__link">
+                                                Неврологи
+                                            </a>
+                                            <svg class="menu__icon" data-name="swipe-second-lvl" viewBox="0 0 28 28">
+                                                <use href="#icon-arrow"></use>
+                                            </svg>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="doctors.html" class="menu__link">
+                                                Дерматологи
+                                            </a>
+                                            <svg class="menu__icon" data-name="swipe-second-lvl" viewBox="0 0 28 28">
+                                                <use href="#icon-arrow"></use>
+                                            </svg>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="doctors.html" class="menu__link">
+                                                Косметологи
+                                            </a>
+                                            <svg class="menu__icon" data-name="swipe-second-lvl" viewBox="0 0 28 28">
+                                                <use href="#icon-arrow"></use>
+                                            </svg>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="doctors.html" class="menu__link">
+                                                Трихологи
+                                            </a>
+                                            <svg class="menu__icon" data-name="swipe-second-lvl" viewBox="0 0 28 28">
+                                                <use href="#icon-arrow"></use>
+                                            </svg>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="doctors.html" class="menu__link">
+                                                Гастроэнтерологи
+                                            </a>
+                                            <svg class="menu__icon" data-name="swipe-second-lvl" viewBox="0 0 28 28">
+                                                <use href="#icon-arrow"></use>
+                                            </svg>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="doctors.html" class="menu__link">
+                                                Терапевты
+                                            </a>
+                                            <svg class="menu__icon" data-name="swipe-second-lvl" viewBox="0 0 28 28">
+                                                <use href="#icon-arrow"></use>
+                                            </svg>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="doctors.html" class="menu__link">
+                                                Врачи УЗИ
+                                            </a>
+                                            <svg class="menu__icon" data-name="swipe-second-lvl" viewBox="0 0 28 28">
+                                                <use href="#icon-arrow"></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+
+                                    <!-- Swipe for categories -->
+                                    <div class="menu__content" data-name="doctors-categories">
+                                        <div class="menu__content-inner container">
+                                            <h2 class="menu__t">
+                                                <svg class="menu__icon" data-name="swipe-menu-back" viewBox="0 0 28 28">
+                                                    <use href="#icon-back"></use>
+                                                </svg>
+                                                Проктологи
+                                            </h2>
+                                            <ul class="menu__list">
+                                                <li class="menu__item">
+                                                    <a href="doctor-detail.html" class="menu__link">Зинкеева Светлана Владимировна</a>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <a href="doctor-detail.html" class="menu__link">Кузовлёв Игорь Сергеевич</a>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <a href="doctor-detail.html" class="menu__link">Володченкова Наталья Дмитриевна</a>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <a href="doctor-detail.html" class="menu__link">Федорин Павел Игоревич</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu__content" data-name="doctors-categories">
+                                        <div class="menu__content-inner container">
+                                            <h2 class="menu__t">
+                                                <svg class="menu__icon" data-name="swipe-menu-back" viewBox="0 0 28 28">
+                                                    <use href="#icon-back"></use>
+                                                </svg>
+                                                Урологи
+                                            </h2>
+                                            <ul class="menu__list">
+                                                <li class="menu__item">
+                                                    <a href="doctor-detail.html" class="menu__link">Арабов Ш.И.</a>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <a href="doctor-detail.html" class="menu__link">Рачковский С.С.</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu__content" data-name="doctors-categories">
+                                        <div class="menu__content-inner container">
+                                            <h2 class="menu__t">
+                                                <svg class="menu__icon" data-name="swipe-menu-back" viewBox="0 0 28 28">
+                                                    <use href="#icon-back"></use>
+                                                </svg>
+                                                Гинекологи
+                                            </h2>
+                                            <ul class="menu__list">
+                                                <li class="menu__item">
+                                                    <a href="doctor-detail.html" class="menu__link">Шеховцова И.В.</a>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <a href="doctor-detail.html" class="menu__link">Сущих Г.А</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu__content" data-name="doctors-categories">
+                                        <div class="menu__content-inner container">
+                                            <h2 class="menu__t">
+                                                <svg class="menu__icon" data-name="swipe-menu-back" viewBox="0 0 28 28">
+                                                    <use href="#icon-back"></use>
+                                                </svg>
+                                                Неврологи
+                                            </h2>
+                                            <ul class="menu__list">
+                                                <li class="menu__item">
+                                                    <a href="doctor-detail.html" class="menu__link">Авдеева Т.Б.</a>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <a href="doctor-detail.html" class="menu__link">Пенькова А.В.</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu__content" data-name="doctors-categories">
+                                        <div class="menu__content-inner container">
+                                            <h2 class="menu__t">
+                                                <svg class="menu__icon" data-name="swipe-menu-back" viewBox="0 0 28 28">
+                                                    <use href="#icon-back"></use>
+                                                </svg>
+                                                Дерматологи
+                                            </h2>
+                                            <ul class="menu__list">
+                                                <li class="menu__item">
+                                                    <a href="doctor-detail.html" class="menu__link">Омурзакова А.Т.</a>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <a href="doctor-detail.html" class="menu__link">Стародубова Е.О.</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu__content" data-name="doctors-categories">
+                                        <div class="menu__content-inner container">
+                                            <h2 class="menu__t">
+                                                <svg class="menu__icon" data-name="swipe-menu-back" viewBox="0 0 28 28">
+                                                    <use href="#icon-back"></use>
+                                                </svg>
+                                                Косметологи
+                                            </h2>
+                                            <ul class="menu__list">
+                                                <li class="menu__item">
+                                                    <a href="doctor-detail.html" class="menu__link">Омурзакова А.Т.</a>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <a href="doctor-detail.html" class="menu__link">Стародубова Е.О.</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu__content" data-name="doctors-categories">
+                                        <div class="menu__content-inner container">
+                                            <h2 class="menu__t">
+                                                <svg class="menu__icon" data-name="swipe-menu-back" viewBox="0 0 28 28">
+                                                    <use href="#icon-back"></use>
+                                                </svg>
+                                                Трихологи
+                                            </h2>
+                                            <ul class="menu__list">
+                                                <li class="menu__item">
+                                                    <a href="doctor-detail.html" class="menu__link">Омурзакова А.Т.</a>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <a href="doctor-detail.html" class="menu__link">Стародубова Е.О.</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="menu__content" data-name="doctors-categories">
+                                        <div class="menu__content-inner container">
+                                            <h2 class="menu__t">
+                                                <svg class="menu__icon" data-name="swipe-menu-back" viewBox="0 0 28 28">
+                                                    <use href="#icon-back"></use>
+                                                </svg>
+                                                Гастроэнтерологи
+                                            </h2>
+                                            <ul class="menu__list">
+                                                <li class="menu__item">
+                                                    <a href="doctor-detail.html" class="menu__link">Арабова Р.Д.</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu__content" data-name="doctors-categories">
+                                        <div class="menu__content-inner container">
+                                            <h2 class="menu__t">
+                                                <svg class="menu__icon" data-name="swipe-menu-back" viewBox="0 0 28 28">
+                                                    <use href="#icon-back"></use>
+                                                </svg>
+                                                Терапевты
+                                            </h2>
+                                            <ul class="menu__list">
+                                                <li class="menu__item">
+                                                    <a href="doctor-detail.html" class="menu__link">Арабова Р.Д.</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu__content" data-name="doctors-categories">
+                                        <div class="menu__content-inner container">
+                                            <h2 class="menu__t">
+                                                <svg class="menu__icon" data-name="swipe-menu-back" viewBox="0 0 28 28">
+                                                    <use href="#icon-back"></use>
+                                                </svg>
+                                                Врачи УЗИ
+                                            </h2>
+                                            <ul class="menu__list">
+                                                <li class="menu__item">
+                                                    <a href="doctor-detail.html" class="menu__link">Жерносек И.К.</a>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <a href="doctor-detail.html" class="menu__link">Мкртчян Л.Г.</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- / Swipe -->
+
+            <!-- Header -->
+            <header class="header">
+                <a class="header__logo" href="index.html">
+                    <img src="./images/logo.png" alt="" class="header__logo-img">
+                </a>
+                <div class="header__top">
+                    <div class="header__inner container">
+                        <div class="header__schedule d-none d-lg-block">
+                            <div class="small-text">пн-пт: с 8:00 до 20:00</div>
+                            <div class="small-text">сб: с 9:00 до 17:00</div>
+                            <div class="small-text">вс: с 9:00 до 17:00 (только запись)</div>
+                        </div>
+                        <div class="header__info d-none d-lg-block">
+                            <div class="header__info-item">
+                                <a href="tel:334455" class="link-phone">
+                                    <img src="./images/icons/phone.svg" alt="" class="link-phone__img">
+                                    33-44-55
+                                </a>
+                            </div>
+                            <div class="header__info-item">
+                                <a href="contacts.html" class="header__info-location link link--gray link--underline">
+                                    <img src="./images/icons/location.svg" alt="" class="header__info-img">
+                                    <span class="small-text">Калининград, ул.Партизана <br>Железняка, 1</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header__discount d-none d-xl-flex">
+                            <div class="header__discount-inner">
+                                <span class="highlight">Скидка 20%</span> на приём <br>за запись через сайт
+                            </div>
+                        </div>
+                        <div class="header__btn d-none d-lg-block">
+                            <a href="zapis.html" class="btn btn--primary">
+                                <div class="btn__inner">
+                                    <span class="btn__text">Записаться на приём</span>
+                                    <div class="small-text highlight">(круглосуточно)</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="header__burger d-block d-lg-none">
+                            <button class="burger" type="button" data-name="swipe">
+                                <div class="burger__item"></div>
+                                <div class="burger__item"></div>
+                                <div class="burger__item"></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom d-none d-lg-block">
+                    <div class="header__inner container">
+                        <nav class="header__menu menu">
+                            <ul class="menu__list">
+                                <li class="menu__item menu__item--dropdown">
+                                    <a href="branches.html" class="menu__link">
+                                        Отделения
+                                        <svg class="menu__icon" viewBox="0 0 16 16">
+                                            <use href="#icon-caret"></use>
+                                        </svg>
+                                    </a>
+                                    <div class="header__dropdown">
+                                        <div class="container header__dropdown-inner">
+                                            <div class="row align-items-start">
+                                                <div class="col-2">
+                                                    <ul class="menu__list">
+                                                        <li class="menu__item">
+                                                            <a href="branch-detail.html" class="menu__link">Проктология</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="branch-detail.html" class="menu__link">Урология</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="branch-detail.html" class="menu__link">Гинекология</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-2">
+                                                    <ul class="menu__list">
+                                                        <li class="menu__item">
+                                                            <a href="branch-detail.html" class="menu__link">Неврология</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="branch-detail.html" class="menu__link">Дерматология</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="branch-detail.html" class="menu__link">Косметология</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-2">
+                                                    <ul class="menu__list">
+                                                        <li class="menu__item">
+                                                            <a href="branch-detail.html" class="menu__link">Трихология</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="branch-detail.html" class="menu__link">Гастроэнтерология</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="branch-detail.html" class="menu__link">Терапия</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-2">
+                                                    <ul class="menu__list">
+                                                        <li class="menu__item">
+                                                            <a href="branch-detail.html" class="menu__link">УЗИ</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="branch-detail.html" class="menu__link">Рефлексотерапия</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="branch-detail.html" class="menu__link">Физиотерапия</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-2">
+                                                    <ul class="menu__list">
+                                                        <li class="menu__item">
+                                                            <a href="branch-detail.html" class="menu__link">Сдать анализы</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu__item menu__item--dropdown">
+                                    <a href="doctors.html" class="menu__link">
+                                        Врачи
+                                        <svg class="menu__icon" viewBox="0 0 16 16">
+                                            <use href="#icon-caret"></use>
+                                        </svg>
+                                    </a>
+                                    <div class="header__dropdown header__dropdown--doctors">
+                                        <div class="container header__dropdown-inner">
+                                            <div class="row align-items-start">
+                                                <div class="col-2">
+                                                    <ul class="menu__list">
+                                                        <li class="menu__item">
+                                                            <a href="doctors.html" class="menu__link">Проктологи</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="doctor-detail.html" class="menu__link">Зинкеева С.В.</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="doctor-detail.html" class="menu__link">Кузовлёв И.С.</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="doctor-detail.html" class="menu__link">Володченкова Н.Д.</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="doctor-detail.html" class="menu__link">Федорин П.И.</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-2">
+                                                    <ul class="menu__list">
+                                                        <li class="menu__item">
+                                                            <a href="doctors.html" class="menu__link">Урологи</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="doctor-detail.html" class="menu__link">Арабов Ш.И.</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="doctor-detail.html" class="menu__link">Рачковский С.С.</a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="menu__list">
+                                                        <li class="menu__item">
+                                                            <a href="doctors.html" class="menu__link">Гинекологи</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="doctor-detail.html" class="menu__link">Шеховцова И.В.</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="doctor-detail.html" class="menu__link">Сущих Г.А</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-2">
+                                                    <ul class="menu__list">
+                                                        <li class="menu__item">
+                                                            <a href="doctors.html" class="menu__link">Неврологи</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="doctor-detail.html" class="menu__link">Авдеева Т.Б.</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="doctor-detail.html" class="menu__link">Пенькова А.В.</a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="menu__list">
+                                                        <li class="menu__item">
+                                                            <a href="doctors.html" class="menu__link">Дерматологи</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="doctor-detail.html" class="menu__link">Шеховцова И.В.</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="doctor-detail.html" class="menu__link">Сущих Г.А.</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-2">
+                                                    <ul class="menu__list">
+                                                        <li class="menu__item">
+                                                            <a href="doctors.html" class="menu__link">Косметологи</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="doctor-detail.html" class="menu__link">Омурзакова А.Т.</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="doctor-detail.html" class="menu__link">Стародубова Е.О.</a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="menu__list">
+                                                        <li class="menu__item">
+                                                            <a href="doctors.html" class="menu__link">Трихологи</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="doctor-detail.html" class="menu__link">Омурзакова А.Т.</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="doctor-detail.html" class="menu__link">Стародубова Е.О.</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-2">
+                                                    <ul class="menu__list">
+                                                        <li class="menu__item">
+                                                            <a href="doctors.html" class="menu__link">Гастроэнтерологи</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="doctor-detail.html" class="menu__link">Арабова Р.Д.</a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="menu__list">
+                                                        <li class="menu__item">
+                                                            <a href="doctors.html" class="menu__link">Терапевты</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="doctor-detail.html" class="menu__link">Арабова Р.Д.</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-2">
+                                                    <ul class="menu__list">
+                                                        <li class="menu__item">
+                                                            <a href="doctors.html" class="menu__link">Врачи УЗИ</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="doctor-detail.html" class="menu__link">Жерносек И.К.</a>
+                                                        </li>
+                                                        <li class="menu__item">
+                                                            <a href="doctor-detail.html" class="menu__link">Мкртчян Л.Г.</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="cost.html" class="menu__link">Стоимость первичного приёма</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="reviews.html" class="menu__link">Отзывы</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="faq.html" class="menu__link">Вопрос-ответ</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="contacts.html" class="menu__link">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__other">
+                            <a href="search.html" class="header__other-item">
+                                <svg class="header__other-icon" viewBox="0 0 34 28">
+                                    <use href="#icon-search"></use>
+                                </svg>
+                            </a>
+                            <a class="header__other-item">
+                                <button class="burger" type="button" data-name="dropdown">
+                                    <div class="burger__item"></div>
+                                    <div class="burger__item"></div>
+                                    <div class="burger__item"></div>
+                                </button>
+                                <div class="header__dropdown">
+                                    <div class="header__dropdown-inner container">
+                                        <div class="row">
+                                            <div class="col-auto menu">
+                                                <ul class="menu__list">
+                                                    <li class="menu__item">
+                                                        <a href="insurance.html" class="menu__link">Лечение за счёт <br>страховой компании</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-auto menu">
+                                                <ul class="menu__list">
+                                                    <li class="menu__item">
+                                                        <a href="corporate-service.html" class="menu__link">Корпоративное <br>обслуживание</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-auto menu">
+                                                <ul class="menu__list">
+                                                    <li class="menu__item">
+                                                        <a href="interviews.html" class="menu__link">Интервью с врачами</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-auto menu">
+                                                <ul class="menu__list">
+                                                    <li class="menu__item">
+                                                        <a href="news.html" class="menu__link">Новости</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-auto menu">
+                                                <ul class="menu__list">
+                                                    <li class="menu__item">
+                                                        <a href="about.html" class="menu__link">О клинике</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- / Header -->
+
+            <!-- Main -->
+            <main class="main">
+                <div class="breadcrumb">
+                    <div class="breadcrumb__inner container">
+                        <ul class="breadcrumb__list">
+                            <div class="swiper-wrapper">
+                                <li class="breadcrumb__item swiper-slide">
+                                    <a href="index.html" class="breadcrumb__link text-gray">Главная</a>
+                                </li>
+                                <li class="breadcrumb__item swiper-slide">Интервью с врачами</li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container">
+                    <section class="section">
+                        <h1>Интервью с врачами</h1>
+                        <div class="row no-gutters sticky-sidebar">
+                            <div class="col-xl-3 col-lg-4 sticky-sidebar__aside">
+                                <div class="sticky-sidebar__inner">
+                                    <form class="form">
+                                        <div class="form__filters">
+                                            <div class="form__t">Фильтры</div>
+                                            <div class="select">
+                                                <select name="branches">
+                                                    <option>Выбрать отделение</option>
+                                                    <option value="1">Проктология</option>
+                                                    <option value="2">Урология</option>
+                                                    <option value="3">Гинекология</option>
+                                                    <option value="4">Неврология</option>
+                                                    <option value="5">Дерматология</option>
+                                                    <option value="6">Косметология</option>
+                                                    <option value="7">Трихология</option>
+                                                    <option value="8">Гастроэнтерология</option>
+                                                    <option value="9">Терапия</option>
+                                                    <option value="10">УЗИ</option>
+                                                    <option value="11">Рефлексотерапия</option>
+                                                    <option value="12">Физиотерапия</option>
+                                                    <option value="13">Сдать анализы</option>
+                                                </select>
+                                            </div>
+                                            <div class="select">
+                                                <select name="doctor" id="doctor">
+                                                    <option>Выбрать врача</option>
+                                                    <optgroup label="Гинекология">
+                                                        <option value="Шеховцова Ирина Владимировна">Шеховцова Ирина Владимировна</option>
+                                                        <option value="Сущих Галина Александровна">Сущих Галина Александровна</option>
+                                                    </optgroup>
+                                                    <optgroup label="Урология">
+                                                        <option value="Арабов Шухрат Ибрагимович">Арабов Шухрат Ибрагимович </option>
+                                                        <option value="Рачковский Сергей Сергеевич">Рачковский Сергей Сергеевич </option>
+                                                    </optgroup>
+                                                    <optgroup label="Проктология">
+                                                        <option value="Зинкеева Светлана Владимировна">Зинкеева Светлана Владимировна </option>
+                                                        <option value="Кузовлёв Игорь Сергеевич">Кузовлёв Игорь Сергеевич </option>
+                                                        <option value="Володченкова Наталья Дмитриевна">Володченкова Наталья Дмитриевна </option>
+                                                        <option value="Федорин Павел Игоревич">Федорин Павел Игоревич </option>
+                                                    </optgroup>
+                                                    <optgroup label="Неврология">
+                                                        <option value="Авдеева Татьяна Борисовна">Авдеева Татьяна Борисовна</option>
+                                                        <option value="Пенькова Анна Валерьевна">Пенькова Анна Валерьевна</option>
+                                                    </optgroup>
+                                                    <optgroup label="Терапия">
+                                                        <option value="Арабова Робия Дамировна">Арабова Робия Дамировна</option>
+                                                    </optgroup>
+                                                    <optgroup label="Гастроэнтерология">
+                                                        <option value="Арабова Робия Дамировна">Арабова Робия Дамировна</option>
+                                                    </optgroup>
+                                                    <optgroup label="Дерматология">
+                                                        <option value="Омурзакова Алия Туратбековна">Омурзакова Алия Туратбековна</option>	
+                                                        <option value="Стародубова Елена Олеговна">Стародубова Елена Олеговна</option>
+                                                        <option value="Болотова Валерия Григорьевна">Болотова Валерия Григорьевна</option>
+                                                    </optgroup>
+                                                    <optgroup label="Косметология и трихология">
+                                                        <option value="Омурзакова Алия Туратбековна">Омурзакова Алия Туратбековна</option>	
+                                                        <option value="Стародубова Елена Олеговна">Стародубова Елена Олеговна</option>
+                                                    </optgroup>
+                                                    <optgroup label="УЗИ-диагностика">
+                                                        <option value="Жерносек Ирина Константиновна">Жерносек Ирина Константиновна</option>
+                                                        <option value="Мкртчян Лаура Григорьевна">Мкртчян Лаура Григорьевна</option>
+                                                        <option value="Ерохина Анастасия Владимировна">Ерохина Анастасия Владимировна</option>
+                                                    </optgroup>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-xl-9 col-lg-8">
+                                <div class="sticky-sidebar__content">
+                                    <div class="list list--items">
+                                        <div class="list__item">
+                                            <a class="list__img" href="interview-detail.html">
+                                                <div class="list__bg" style="background-image: url('./images/interview-4.jpg');"></div>
+                                            </a>
+                                            <div class="list__info">
+                                                <div class="list__tags tags">
+                                                    <a class="tags__item" href="interviews.html">Арабов Ш.И.</a>
+                                                    <a class="tags__item" href="interviews.html">Урология</a>
+                                                </div>
+                                                <a class="list__text text" href="interview-detail.html">Урологическая арифметика: о цене здоровья и инвестициях в импотенцию</a>
+                                            </div>
+                                        </div>
+                                        <div class="list__item">
+                                            <a class="list__img" href="interview-detail.html">
+                                                <div class="list__bg" style="background-image: url('./images/interview-5.jpg');"></div>
+                                            </a>
+                                            <div class="list__info">
+                                                <div class="list__tags tags">
+                                                    <a class="tags__item" href="interviews.html">Арабов Ш.И.</a>
+                                                    <a class="tags__item" href="interviews.html">Урология</a>
+                                                </div>
+                                                <a class="list__text text" href="interview-detail.html">Хронические тазовые боли: что это и когда следует обратить внимание на тревожные симптомы?</a>
+                                                <div class="list__date text-gray">04.11.2021</div>
+                                            </div>
+                                        </div>
+                                        <div class="list__item">
+                                            <div class="list__info">
+                                                <div class="list__tags tags">
+                                                    <a class="tags__item" href="interviews.html">Арабова Р.Д.</a>
+                                                    <a class="tags__item" href="interviews.html">Гастроэнтерология</a>
+                                                </div>
+                                                <a class="list__text text" href="interview-detail.html">Что нужно знать о дискинезиях желчевыводящих путей?</a>
+                                                <div class="list__date text-gray">04.11.2021</div>
+                                            </div>
+                                        </div>
+                                        <div class="list__item">
+                                            <a class="list__img" href="interview-detail.html">
+                                                <div class="list__bg" style="background-image: url('./images/interview-6.jpg');"></div>
+                                            </a>
+                                            <div class="list__info">
+                                                <div class="list__tags tags">
+                                                    <a class="tags__item" href="interviews.html">Стародубова Е.О. </a>
+                                                    <a class="tags__item" href="interviews.html">Косметология</a>
+                                                </div>
+                                                <a class="list__text text" href="interview-detail.html">Как изменить контуры лица без операций и шрамов?</a>
+                                                <div class="list__date text-gray">04.11.2021</div>
+                                            </div>
+                                        </div>
+                                        <div class="list__item">
+                                            <a class="list__img" href="interview-detail.html">
+                                                <div class="list__bg" style="background-image: url('./images/interview-1.jpg');"></div>
+                                            </a>
+                                            <div class="list__info">
+                                                <div class="list__tags tags">
+                                                    <a class="tags__item" href="interviews.html">Шеховцова И.В.</a>
+                                                    <a class="tags__item" href="interviews.html">Гинекология</a>
+                                                </div>
+                                                <a class="list__text text" href="interview-detail.html">Какая методика интимного омоложения действительно работает?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="section__block text-center">
+                                        <a href="#" class="btn btn--secondary">Показать ещё</a>
+                                        <div class="small-text">Показано интервью 5 из 44</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <!-- / Main -->
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer__top container">
+                    <div class="footer__inner">
+                        <a class="footer__logo" href="index.html">
+                            <img src="./images/logo.png" alt="" class="footer__logo-img">
+                        </a>
+                        <a href="zapis.html" class="btn btn--primary">
+                            <div class="btn__inner">
+                                <span class="btn__text">Записаться на приём</span>
+                                <div class="small-text highlight">(круглосуточно)</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__content container">
+                    <div class="footer__inner">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="row section__block">
+                                    <div class="col-md-6">
+                                        <h4>Телефон</h4>
+                                        <a href="tel:+74012334455" class="link link--gray">+7 (4012) <span class="highlight">33-44-55</span></a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h4>Email </h4>
+                                        <a href="mailto:medcentr@class-clinic.com" class="link">medcentr@class-clinic.com</a>
+                                    </div>
+                                </div>
+                                <div class="row section__block">
+                                    <div class="col-md-6">
+                                        <h4>Адрес</h4>
+                                        <a href="contacts.html" class="link">Калининград, ул. Партизана Железняка, 1</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h4>Мессенджеры и соцсети</h4>
+                                        <div class="socials">
+                                            <a href="viber://chat?number=%2B79097778009" class="socials__item">
+                                                <img src="./images/icons/viber.svg" alt="" class="socials__img">
+                                            </a>
+                                            <a href="https://api.whatsapp.com/send/?phone=%2B79097778009" target="_blank">
+                                                <img src="./images/icons/whatsapp.svg" alt="" class="socials__img">
+                                            </a>
+                                            <a href="https://telegram.me/%2B79097778009" target="_blank">
+                                                <img src="./images/icons/telegram.svg" alt="" class="socials__img">
+                                            </a>
+                                            <a href="#">
+                                                <img src="./images/icons/vk.svg" alt="" class="socials__img">
+                                            </a>
+                                            <a href="https://instagram.com/classclinic" target="_blank">
+                                                <img src="./images/icons/instagram.svg" alt="" class="socials__img">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 footer__schedule">
+                                <h4>Режим работы</h4>
+                                <div class="text">пн-пт: с 8:00 до 20:00</div>
+                                <div class="text">сб: с 9:00 до 17:00</div>
+                                <div class="text">вс: с 9:00 до 17:00 <span class="text-gray">(только запись, врачи не ведут приём)</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__nav container">
+                    <div class="row menu">
+                        <div class="col-xl-8 col-lg-9">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <ul class="menu__list">
+                                                <li class="menu__item">
+                                                    <a href="branches.html" class="menu__link">Отделения</a>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <a href="doctors.html" class="menu__link">Врачи</a>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <a href="cost.html" class="menu__link">Стоимость услуг</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul class="menu__list">
+                                                <li class="menu__item">
+                                                    <a href="reviews.html" class="menu__link">Отзывы</a>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <a href="faq.html" class="menu__link">Вопрос-ответ</a>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <a href="contacts.html" class="menu__link">Контакты</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <ul class="menu__list">
+                                                <li class="menu__item">
+                                                    <a href="about.html" class="menu__link">О клинике</a>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <a href="news.html" class="menu__link">Новости</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul class="menu__list">
+                                                <li class="menu__item">
+                                                    <a href="insurance.html" class="menu__link">Лечение за счёт страховой компании</a>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <a href="corporate-service.html" class="menu__link">Корпоративное обслуживание</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copy">
+                    <div class="footer__inner container">
+                        &copy; 2021 Class Clinic. Все права защищены.
+                        <a href="privacy.html" class="link link--gray link--underline text-small">Политика конфиденциальности</a>
+                    </div>
+                </div>
+                <div class="footer__clb container">
+                    <a href="https://clientlab.ru" class="footer__clb-link link" target="_blank" title="Разработка и продвижение сайта от КлиентЛаб" rel="noopener">
+                        <img class="footer__clb-img" src="./images/logo-clb.svg" alt="">
+                        Дизайн и разработка сайта КлиентЛаб
+                    </a>
+                </div>
+            </footer>
+            <!-- / Footer -->
+        </div>
+
+        <!-- Кнопка которая видна только на мобиле на всех страницах, кроме записи на прием -->
+        <div class="btn btn--appointment">
+            <a class="btn__item" href="tel:+74012334455">
+                <div class="btn__inner">
+                    <div class="btn__t">Позвонить</div>
+                    <div class="btn__text">
+                        сегодня с 8:00 до 20:00
+                    </div>
+                    <!-- <div class="btn__text">
+                        пн-пт: 8:00–20:00 <br>сб-вс: 9:00–17:00
+                    </div> -->
+                </div>
+            </a>
+            <a class="btn__item" href="zapis.html">
+                <div class="btn__inner">
+                    <div class="btn__t">Записаться</div>
+                    <div class="btn__text">
+                        круглосуточно
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <script src="./js/main.min.js"></script>
+
+        <!-- HTML Templates for Js -->
+        <script id="btnUp" type="text/template7">
+            <a href="#" class="btn-up">
+                <svg class="btn-up__icon" viewBox="0 0 60 60">
+                    <use href="#icon-up"></use>
+                </svg>
+            </a>
+        </script>
+
+        <!-- SVG Sprites (Можно вынести в отдельный файл при желании и вставлять) -->
+        <svg xmlns="http://www.w3.org/2000/svg" style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+            <g id="icon-caret">
+                <path d="M5 7L8 10L11 7" stroke-linecap="round" stroke-linejoin="round"/> 
+                <!-- stroke -->
+            </g>
+            <g id="icon-search">
+                <path d="M24.7516 21.7501L20.9453 17.9438M23 13C23 16.866 19.866 20 16 20C12.134 20 9 16.866 9 13C9 9.13401 12.134 6 16 6C19.866 6 23 9.13401 23 13Z" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <!-- stroke -->
+            </g>
+            <g id="icon-arrow">
+                <path d="M21.7071 14.7071C22.0976 14.3166 22.0976 13.6834 21.7071 13.2929L15.3431 6.92893C14.9526 6.53841 14.3195 6.53841 13.9289 6.92893C13.5384 7.31946 13.5384 7.95262 13.9289 8.34315L19.5858 14L13.9289 19.6569C13.5384 20.0474 13.5384 20.6805 13.9289 21.0711C14.3195 21.4616 14.9526 21.4616 15.3431 21.0711L21.7071 14.7071ZM6 15H21V13H6V15Z" />
+                <!-- fill -->
+            </g>
+            <g id="icon-back">
+                <path d="M0.292893 13.2929C-0.0976311 13.6834 -0.0976311 14.3166 0.292893 14.7071L6.65685 21.0711C7.04738 21.4616 7.68054 21.4616 8.07107 21.0711C8.46159 20.6805 8.46159 20.0474 8.07107 19.6569L2.41421 14L8.07107 8.34315C8.46159 7.95262 8.46159 7.31946 8.07107 6.92893C7.68054 6.53841 7.04738 6.53841 6.65685 6.92893L0.292893 13.2929ZM1 15H26V13H1V15Z" />
+                <!-- fill -->
+            </g>
+            <g id="icon-search-fill">
+                <circle cx="20" cy="20" r="20"/>
+                <path d="M19.3333 24.6667C22.2789 24.6667 24.6667 22.2789 24.6667 19.3333C24.6667 16.3878 22.2789 14 19.3333 14C16.3878 14 14 16.3878 14 19.3333C14 22.2789 16.3878 24.6667 19.3333 24.6667Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M26.0016 26.0003L23.1016 23.1003" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <g id="icon-up">
+                <rect width="60" height="60" rx="30" />
+                <path d="M30 39V20M30 20L23 27M30 20L37 27" stroke="#F2F8FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <g id="icon-close">
+                <path d="M39.5 20C39.5 30.7696 30.7696 39.5 20 39.5C9.23045 39.5 0.5 30.7696 0.5 20C0.5 9.23045 9.23045 0.5 20 0.5C30.7696 0.5 39.5 9.23045 39.5 20Z" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M26 14L14 26M14 14L26 26" stroke-linecap="round" stroke-linejoin="round"/>
+                <!-- stroke -->
+            </g>
+        </svg>
+    </body>
+</html>

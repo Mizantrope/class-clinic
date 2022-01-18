@@ -1,0 +1,139 @@
+.footer {
+    border-top: 1px solid $line-bg;
+    
+    &__inner {
+        display: flex;
+        align-items: center;
+        height: inherit;
+    }
+
+    &__top {
+        height: 116px;
+
+        .footer__inner {
+            @extend %divider-line;
+        }
+    }
+
+    &__logo {
+        &-img {
+            display: block;
+        }
+
+        & + .btn {
+            margin-top: 0;
+            margin-left: auto;
+        }
+    }
+
+    &__content {
+        .footer__inner {
+            @extend %divider-line;
+        }
+    }
+
+    &__content .footer__inner,
+    &__nav {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__copy {
+        display: flex;
+        align-items: center;
+        height: 47px;
+        background-color: #F8FCFD;
+        color: $gray;
+        font-size: 12px;
+
+        .footer__inner {
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .link {
+            font-size: 12px;
+        }
+    }
+
+    &__clb {
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        &-link {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+        }
+
+        &-img {
+            display: block;
+            height: 26px;
+            margin-right: 10px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        &__nav {
+            margin-bottom: -10px;
+        }
+
+        .socials {
+            width: 146px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        &__top {
+            height: auto;
+            padding-top: 20px;
+
+            .footer__inner {
+                flex-direction: column;
+                align-items: flex-start;
+                border: none;
+            }
+        }
+
+        &__logo {
+            &-img {
+                width: 64px;
+            }
+
+            & + .btn {
+                margin-top: 20px;
+            }
+        }
+
+        &__content .footer__inner,
+        &__nav {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        &__schedule {
+            margin-top: 20px;
+        }
+
+        .socials {
+            width: auto;
+        }
+
+        &__clb {
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            &-img {
+                height: 19px;
+                margin-right: 8px;
+            }
+        }
+    }
+
+    @media (max-width: 575px) {
+        &__copy {
+            height: auto;
+            padding: 12px 0;
+        }
+    }
+}

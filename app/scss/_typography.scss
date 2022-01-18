@@ -1,0 +1,242 @@
+h1,
+h2,
+h3,
+h4 {
+    color: $color-heading;
+    font-weight: normal;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 47px;
+}
+
+h2 {
+    font-size: 35px;
+
+    &:not(:first-child) {
+        margin-top: 60px;
+    }
+}
+
+h3 {
+    font-size: 24px;
+
+    &:not(:first-child) {
+        margin-top: 60px;
+    }
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+
+    & + p {
+        margin-top: 15px;
+    }
+
+    & + ul,
+    & + ol,
+    & + .small-text {
+        margin-top: 15px;
+    }
+    
+}
+
+.text {
+    font-size: 16px;
+    line-height: 1.6;
+
+    & + ul,
+    & + ol,
+    & + .small-text {
+        margin-top: 15px;
+    }
+
+    &:not(:first-of-type) {
+        margin-top: 15px;
+    }
+
+    p + div {
+        margin-top: 15px;
+    }
+
+    & + h1 {
+        margin-top: 20px;
+    }
+}
+
+.small-text {
+    font-size: 12px;
+    line-height: 1.4;
+
+    & + .small-text {
+        margin-top: 2px;
+    }
+}
+
+.highlight {
+    color: $blue;
+}
+
+// offsets
+
+h1 + :not(.text),
+h1 + section {
+    margin-top: 60px;
+}
+
+h1 + p,
+h1 + span,
+h1 + a,
+h2 + p,
+h2 + span,
+h2 + a,
+* + .select {
+    display: inline-block;
+}
+
+h1 + p,
+h1 + span,
+h1 + a,
+h1 + [class*="text"],
+h1 + .tags,
+h2 + p,
+h2 + span,
+h2 + a,
+h2 + [class*="text"],
+h2 + ul,
+h2 + ol,
+h3 + ul,
+h3 + ol,
+h3 + div,
+h3 + p {
+    margin-top: 20px;
+}
+
+h1 + img {
+    margin: 60px auto;
+}
+
+h2 + div,
+h3 + .select,
+h3 + form,
+h3 + .cards {
+    margin-top: 30px;
+}
+
+h4 + * {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.text + .text {
+    margin-top: 20px;
+}
+
+.text + .select {
+    margin-top: 5px;
+}
+
+
+.small-text + .text {
+    margin-top: 5px;
+}
+
+@media (max-width: 991px) {
+    h1 {
+        font-size: 36px;
+    }
+    
+    h2 {
+        font-size: 29px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+    
+    h4 {
+        font-size: 14px;
+    }
+    
+    p,
+    .text {
+        font-size: 14px;
+    }
+
+    h3 + p {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 26px;
+    }
+    
+    h2 {
+        font-size: 20px;
+
+        &:not(:first-child) {
+            margin-top: 40px;
+        }
+    }
+    
+    h3 {
+        font-size: 16px;
+
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+    }
+
+    .text {
+        & + h1 {
+            margin-top: 15px;
+        }
+    }
+
+    h1 + p,
+    h1 + span,
+    h1 + a,
+    h1 + .tags,
+    h3 + ul,
+    h3 + ol,
+    h3 + .cards {
+        margin-top: 15px;
+    }
+
+    h1 + :not(.text),
+    h1 + section {
+        margin-top: 30px;
+    }
+
+    h2 + div,
+    h3 + .select,
+    h3 + p,
+    h3 + form {
+        margin-top: 20px;
+    }
+
+    h2 + [class*="text"] {
+        margin-top: 5px;
+    }
+
+    h1 + [class*="text"],
+    .text + .text {
+        margin-top: 15px;
+    }
+
+    .small-text + .text {
+        margin-top: 2px;
+    }
+}

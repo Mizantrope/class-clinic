@@ -1,0 +1,131 @@
+.main-slider {
+    height: 400px;
+    border-radius: 5px;
+    border: 1px solid #CDDBE2;
+    background-color: #fff;
+
+    &__item {
+        > * {
+            height: 100%;
+        }
+    }
+
+    &__cover {
+        width: 100%;
+        height: 100%;
+        background-position: 50% 0;
+        background-size: cover;
+    }
+
+    &__info {
+        padding: 30px;
+    }
+
+    &__t {
+        font-size: 24px;
+        font-weight: normal;
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+    }
+
+    .swiper-arrow {
+        bottom: 30px;
+
+        &--prev {
+            left: 30px;
+        }
+
+        &--next {
+            left: 85px;
+        }
+    }
+
+    .swiper-pagination {
+        gap: 0 5px;
+        bottom: 30px;
+        left: 155px;
+        width: auto;
+        height: 40px;
+
+        &-bullet {
+            background-color: #CDDBE2;
+
+            &-active {
+                background-color: $gray;
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        height: 340px;
+
+        &__t {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        height: auto;
+
+        &__info {
+            padding: 20px 15px;
+        }
+
+        &__t {
+            margin: 0 auto;
+            max-width: 290px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        &__img {
+            position: relative;
+            padding-bottom: 56.25%;
+        }
+
+        &__cover {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .swiper-arrow {
+            bottom: 140px;
+
+            &--prev {
+                left: 10px;
+            }
+
+            &--next {
+                left: calc(100% - 38px);
+            }
+        }
+
+        .swiper-pagination {
+            gap: 0 3px;
+            bottom: 10px;
+            left: 50%;
+            height: 2px;
+            transform: translateX(-50%);
+        }
+    }
+
+    @media (max-width: 575px) {
+        &__t {
+            max-width: 250px;
+            font-size: 14px;
+        }
+
+        .swiper-arrow {
+            bottom: 25%;
+            transform: translateY(-50%);
+            margin-bottom: -15px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .br {
+            display: block;
+        }
+    }
+}

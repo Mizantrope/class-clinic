@@ -1,0 +1,32 @@
+.alert {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #F2F8FC;
+
+    &__text {
+        position: relative;
+        padding-left: 40px;
+        background-image: url('../images/icons/warning.svg');
+        background-repeat: no-repeat;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    @media (max-width: 991px) {
+        &__text {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    }
+
+    @media (max-width: 767px) {
+        padding: 10px;
+
+        &__text {
+            padding-left: 30px;
+            font-size: 12px;
+            line-height: 1.2;
+            background-size: 20px 18px;
+        }
+    }
+}

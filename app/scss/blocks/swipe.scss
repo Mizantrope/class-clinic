@@ -1,0 +1,271 @@
+.swipe {
+    display: none;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 450;
+    transition: $transition-duration;
+    background-color: #fff;
+
+    @media (max-width: 991px) {
+        display: block;
+        top: 0;
+        transform: translateY(-100%);
+
+        &__content {
+            position: relative;
+            height: calc(100% - 82px);
+            padding-top: 60px;
+            padding-bottom: 60px;
+            overflow-x: hidden;
+            -webkit-overflow-scrolling: touch;
+
+            &--opened {
+                overflow: hidden;
+
+                .menu__content--opened {
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                }
+            }
+
+            &--second {
+                .menu__content--opened {
+                    overflow: hidden;
+                }
+
+                [data-name="doctors-categories"] {
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                }
+            }
+        }
+
+        .menu {
+            &__list {
+                & + .menu__list {
+                    margin-top: 30px;
+                }
+
+                &--secondary {
+                    .menu__item {
+                        line-height: 1.5;
+
+                        & + .menu__item {
+                            margin-top: 15px;
+                        }
+                    }
+                    
+                    .menu__link {
+                        font-size: 14px;
+                    }
+                }
+            }
+            
+            &__item {
+                display: flex;
+                align-items: center;
+                line-height: 1.2;
+                transition: $transition-duration;
+
+                & + .menu__item {
+                    margin-top: 20px;
+                }
+            }
+
+            &__link {
+                font-size: 29px;
+                letter-spacing: -0.02em;
+            }
+
+            &__icon {
+                width: 28px;
+                height: 28px;
+                margin-left: auto;
+                fill: $gray;
+                cursor: pointer;
+
+                &:hover {
+                    fill: $light-blue;
+                }
+            }
+
+            &__content {
+                position: fixed;
+                top: 0;
+                right: 0;
+                left: 0;
+                z-index: 5;
+                height: calc(100% - 82px);
+                padding-top: 60px;
+                padding-bottom: 60px;
+                // overflow: hidden;
+                transform: translateX(100%);
+                transition: $transition-duration;
+                background-color: #fff;
+                -webkit-overflow-scrolling: touch;
+
+                &[data-name="doctors-categories"] {
+                    position: absolute;
+                    height: 100%;
+                }
+
+                .menu {
+                    &__list {
+                        margin-top: 30px;
+                    }
+
+                    &__item {
+                        line-height: 1.5;
+
+                        & + .menu__item {
+                            margin-top: 15px;
+                        }
+                    }
+
+                    &__link {
+                        font-size: 14px;
+                    }
+                }
+
+                &--opened {
+                    transform: translateX(0);
+                }
+            }
+
+            &__t {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+
+                .menu__icon {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    margin-left: 0;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+
+        &__info {
+            margin-top: 60px;
+            padding-top: 60px;
+            border-top: 1px solid #CDDBE2;
+            font-size: 16px;
+
+            .btn {
+                margin-bottom: 30px;
+            }
+
+            &-section {
+                &:not(:first-of-type) {
+                    margin-top: 20px;
+                }
+            }
+
+            p {
+                & + p {
+                    margin-top: 2px;
+                }
+            }
+
+            .link--search {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+
+                .link__icon {
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 10px;
+                    fill: $blue;
+                }
+
+                &:hover {
+                    .link__icon {
+                        fill: $color;
+                    }
+                }
+
+                &:active {
+                    .link__icon {
+                        fill: $black;
+                    }
+                }
+            }
+        }
+
+        &--opened {
+            top: 82px;
+            transform: translateY(0);
+        }
+    }
+
+    @media (max-width: 767px) {
+        &__content {
+            height: calc(100% - 44px);
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .menu {
+            &__list {
+                &--secondary {
+                    .menu__item {
+                        & + .menu__item {
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+
+            &__item {
+                & + .menu__item {
+                    margin-top: 15px;
+                }
+            }
+
+            &__link {
+                font-size: 20px;
+            }
+
+            &__content {
+                height: calc(100% - 44px);
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+        }
+
+        &__info {
+            margin-top: 30px;
+            padding-top: 30px;
+
+            &-section {
+                &:not(:first-child) {
+                    margin-top: 15px;
+                }
+            }
+
+            .link--search {
+                .link__icon {
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 24px;
+                    margin-right: 10px;
+
+                    &-svg {
+                        width: 20px;
+                        height: 14px;
+                    }
+                }
+            }
+        }
+        
+        &--opened {
+            top: 44px;
+        }
+    }
+}

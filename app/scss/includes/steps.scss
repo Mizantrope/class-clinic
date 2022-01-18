@@ -1,0 +1,207 @@
+.steps {
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 0 20px;
+        counter-reset: num;
+        margin: 0 auto 30px;
+
+        &-item {
+            width: 100px;
+
+            &.active {
+                .steps__number {
+                    background-color: $blue;
+                    color: #fff;
+                }
+
+                .steps__text {
+                    color: $blue;
+                }
+            }
+
+            &.complete {
+                .steps__number {
+                    background-color: $gray;
+                    color: #fff;
+                }
+
+                .steps__text {
+                    color: $gray;
+                }
+            }
+        }
+    }
+
+    &__number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 10px;
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        background-color: #DEECF3;
+        color: #A7C1D0;
+        font-size: 20px;
+        font-weight: 500;
+
+        &::after {
+            counter-increment: num;
+            content: counter(num) '';
+        }
+    }
+
+    &__text {
+        color: $gray;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    &__content {
+        position: relative;
+        text-align: center;
+
+        &-item {
+            &:not(.active) {
+                position: absolute;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        
+        &-t {
+            margin: 0 auto;
+            max-width: 540px;
+        }
+
+        &-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            margin-top: 30px;
+
+            .btn {
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+
+                & + .btn {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    .cards {
+        gap: 10px 0;
+        text-align: left;
+
+        &.row {
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+
+        [class*="col-"] {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+
+    .form {
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+
+        &__row {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__textarea {
+            grid-column: 2 span;
+            grid-row: 2 span;
+        }
+
+        &--three-cols {
+            max-width: 820px;
+
+            .form__row {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        &__list {
+            &-item {
+                width: 80px;
+            }
+        }
+
+        &__number {
+            width: 28px;
+            height: 28px;
+            margin-bottom: 4px;
+            border-radius: 28px;
+            font-size: 14px;
+        }
+
+        &__text {
+            font-size: 10px;
+        }
+
+        .form {
+            &--three-cols {
+                max-width: 260px;
+    
+                .form__row {
+                    gap: 10px;
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        &__list {
+            gap: 0 10px;
+            margin-bottom: 20px;
+        }
+
+        &__content {
+            text-align: left;
+
+            &-actions {
+                flex-direction: column-reverse;
+
+                .btn + .btn {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &__t {
+            font-size: 20px;
+        }
+
+        .form {
+            &__row {
+                display: grid;
+                gap: 10px;
+                grid-template-columns: 1fr;
+            }
+    
+            &__textarea {
+                grid-column: auto;
+                grid-row: auto;
+            }
+
+            &--three-cols {
+                max-width: 100%;
+            }
+        }
+    }
+}

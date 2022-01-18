@@ -1,0 +1,19 @@
+.main {
+    padding-top: 134px;
+
+    > :first-child:not(.breadcrumb) {
+        margin-top: 60px;
+    }
+
+    @media (max-width: 991px) {
+        padding-top: 82px;
+    }
+
+    @media (max-width: 767px) {
+        padding-top: 44px;
+
+        > :first-child:not(.breadcrumb) {
+            margin-top: 30px;
+        }
+    }
+}

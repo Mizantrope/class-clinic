@@ -1,0 +1,16 @@
+.schedule {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px 0;
+
+    &__item {
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid $line-bg;
+    }
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 30px;
+    }
+}

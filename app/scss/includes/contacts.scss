@@ -1,0 +1,39 @@
+.contacts {
+    &__adress {
+        &-item {
+            &:not(:first-of-type) {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    &__map {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+
+        &-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @media (max-width: 767px) {
+        &__map {
+            height: auto;
+            margin-top: 40px;
+            padding-bottom: 100%;
+        }
+    }
+
+    @media (max-width: 575px) {
+        &__map {
+            border-radius: 0;
+        }
+    }
+}

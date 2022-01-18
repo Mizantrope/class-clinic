@@ -1,0 +1,63 @@
+.accordeon {
+    &__item {
+        border-radius: 5px;
+        border: 1px solid $line-bg;
+        cursor: pointer;
+
+        @extend %text;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        &--active {
+            .accordeon__head {
+                &::after {
+                    transform: rotate(180deg);
+                    border-color: $blue transparent transparent;
+                }
+            }
+
+            .accordeon__content {
+                display: block;
+            }
+        }
+    }
+
+    &__head {
+        display: flex;
+        align-items: center;
+        padding: 15px 20px;
+
+        &::after {
+            content: ' ';
+            margin-left: auto;
+
+            @extend %caret;
+        }
+    }
+
+    &__icon {
+        margin-right: 15px;
+        max-height: 34px;
+    }
+
+    &__name {
+        padding-right: 20px;
+    }
+
+    &__content {
+        display: none;
+        padding: 15px 20px 20px;
+    }
+
+    @media (max-width: 767px) {
+        &__head {
+            padding: 12px 20px;
+        }
+
+        &__icon {
+            max-height: 22px;
+        }
+    }
+}

@@ -1,0 +1,170 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: $font;
+    color: $color;
+    font-size: 16px;
+    line-height: 1.4;
+    min-width: $min-width;
+}
+
+.swipe-open,
+.modal-open {
+    overflow: hidden;
+}
+
+.modal-open {
+    .header {
+        z-index: 100;
+    }
+}
+
+#layout {
+    min-height: 100%;
+    overflow-x: hidden;
+
+    @media (max-width: 434px) {
+        padding-bottom: 70px;
+    }
+}
+
+a {
+    transition: $transition-duration;
+    color: $color;
+    text-decoration: none;
+
+    &:hover {
+        color: $light-blue;
+    }
+
+    &:active {
+        color: $blue;
+    }
+}
+
+svg {
+    transition: $transition-duration;
+}
+
+.link {
+    color: $blue;
+
+    &:hover {
+        color: $light-blue;
+
+        .highlight {
+            color: $light-blue;
+        }
+    }
+
+    &:active {
+        color: $blue;
+    }
+
+    &--gray {
+        color: $gray;
+    }
+
+    &--underline {
+        text-decoration: underline;
+    }
+
+    &-phone {
+        font-size: 16px;
+        font-weight: 500;
+
+        &__img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &--block {
+        display: block;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid $line-bg;
+        background-color: #fff;
+
+        &:not(:first-of-type) {
+            margin-top: 10px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        font-size: 14px;
+    }
+}
+
+.text-gray {
+    color: $gray;
+}
+
+.text-blue {
+    color: $blue;
+}
+
+.text-lblue {
+    color: $light-blue;
+}
+
+.text-black {
+    color: $black;
+}
+
+.text-red {
+    color: $red;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: 500;
+}
+
+@media (max-width: 575px) {
+    .br {
+        display: block;
+    }
+}
+
+@media (min-width: 576px) {
+    .sm-br {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .md-br {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    .lg-br {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .xl-br {
+        display: block;
+    }
+}

@@ -1,0 +1,36 @@
+.cost {
+    &__duration {
+        padding: 20px 0;
+        border-color: $line-bg;
+        border-style: solid;
+        border-width: 1px 0;
+    }
+
+    .price-block {
+        .text {
+            @extend %h3-style;
+        }
+    }
+
+    @media (max-width: 767px) {
+        &__duration {
+            padding: 10px 0;
+        }
+
+        .price-block {
+            [class*="col-"] {
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 992px) {
+        width: 610px;
+
+        &__t {
+            max-width: 510px;
+        }
+    }
+}
