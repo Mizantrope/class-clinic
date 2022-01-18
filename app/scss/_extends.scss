@@ -25,6 +25,20 @@
     }
 }
 
+%h1-style {
+    font-size: 47px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+
+    @media (max-width: 991px) {
+        font-size: 36px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 26px;
+    }
+}
+
 %h3-style {
     font-size: 24px;
     letter-spacing: -0.02em;
@@ -49,34 +63,55 @@
 
 %close {
     position: absolute;
+    z-index: 5;
+    width: 40px;
+    height: 40px;
     border: none;
     background-color: transparent;
     cursor: pointer;
 
-    [class*="__close-icon"] {
+    svg {
         width: 40px;
         height: 40px;
-        fill: none;
+        fill: #fff;
         stroke: $line-bg;
     }
 
     &:hover {
-        [class*="__close-icon"] {
+        svg {
             stroke: $color;
         }
     }
 
     &:active {
-        [class*="__close-icon"] {
+        svg {
             fill: #F8FCFD;
             stroke: $color;
         }
     }
 
     @media (max-width: 767px) {
+        width: 24px;
+        height: 24px;
+        
         [class*="__close-icon"] {
             width: 24px;
             height: 24px;
         }
+    }
+}
+
+%search {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    fill: #0387D1;
+
+    &:hover {
+        fill: #2E4E7D;
+    }
+
+    &:active {
+        fill: $black;
     }
 }

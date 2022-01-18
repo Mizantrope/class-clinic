@@ -51,6 +51,12 @@
         padding: 15px 20px 20px;
     }
 
+    &--privacy {
+        .accordeon__item--active {
+            background-color: #F8FCFD;
+        }
+    }
+
     @media (max-width: 767px) {
         &__head {
             padding: 12px 20px;

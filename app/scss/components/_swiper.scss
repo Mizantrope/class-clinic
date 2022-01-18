@@ -45,6 +45,13 @@
         fill: $gray;
     }
 
+    &.swiper-button-disabled {
+        background-color: #eee;
+        border-color: #eee;
+        color: $gray;
+        pointer-events: none;
+    }
+
     @media (max-width: 767px) {
         width: 28px;
         height: 28px;

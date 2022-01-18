@@ -134,7 +134,7 @@ $(function () {
 
     // Reviews slider
     const reviewsSlider = new Swiper(".reviews__list", {
-        loop: true,
+        // loop: true,
         navigation: {
             prevEl: ".reviews .swiper-arrow--prev",
             nextEl: ".reviews .swiper-arrow--next",
@@ -449,7 +449,60 @@ $(function () {
         setCustomTextarea();
     });
 
-    $('body').delegate('[class*="__close"], [data-name="modal-close"]', 'click', function () {
+    $('[data-name="open-review"]').on('click', function (e) {
+        e.preventDefault();
+
+        let item = $(this).parent(),
+            reviewIcon = item.find('.reviews__icon').prop('src'),
+            reviewDate = item.find('.reviews__date').text(),
+            reviewAuthor = item.find('.reviews__name').text(),
+            reviewText = item.find('.reviews__text').html(),
+            reviewNumber = item.find('.reviews__other :first-child').text(),
+            reviewDoctor = item.find('.reviews__other .link').text();
+
+        let items = $(this).parents('.reviews__list').find('.reviews__item'),
+            reviewsItems = [];
+
+        items.each(function (index, item) {
+            reviewsItems.push($(item).html());
+        });
+
+        const reviewParams = {reviewIcon, reviewDate, reviewAuthor, reviewText, reviewNumber, reviewDoctor};
+
+        let templateModal = $('#reivew').html();
+ 
+        // compile it with Template7
+        let compiledTemplateModal = Template7.compile(templateModal);
+
+        let context = {
+            reviewParams,
+            reviewsItems
+        };
+        
+        let html = compiledTemplateModal(context);
+
+        $('body').append(html).addClass('modal-open');
+
+        $('.review [data-name="open-review"]').remove();
+
+        const modalSwiper = new Swiper('.review .reviews__inner', {
+            navigation: {
+                prevEl: '.review .swiper-arrow--prev',
+                nextEl: '.review .swiper-arrow--next',
+            }
+        });
+
+        setTimeout(() => {
+            $('.overlay').addClass('show');
+        }, 100);
+
+        setCustomSelect();
+        setCustomTextarea();
+    });
+
+    $('body').delegate('[class*="__close"], [data-name="modal-close"]', 'click', function (e) {
+        e.preventDefault();
+
         $('.overlay > :first-child').remove();
         $('.overlay').removeClass('show');
 
@@ -472,6 +525,46 @@ $(function () {
         let html = compiledTemplateModal();
 
         $('.modal__content').empty().html(html);
+    });
+
+    // Search
+    $('.search__input').on('keyup', function (e) {
+        let inputValue = this.value;
+
+        if(inputValue.length > 0) {
+            $('.search__clear').show();
+        }
+        else {
+            $('.search__clear').hide();
+        }
+    });
+
+    $('.search__clear').on('click', function (e) {
+        e.preventDefault();
+
+        $('.search__input').val('');
+        $('.search__clear').hide();
+    });
+
+    $('.search__btn').on('click', function (e) {
+        e.preventDefault();
+
+        let val = $('.search__input').val();
+
+        if(val <= 0) {
+            return false;
+        }
+
+        $('.search').addClass('search--finded');
+
+        let template = $('#search-results').html();
+ 
+        // compile it with Template7
+        let compiledTemplate = Template7.compile(template);
+        
+        let html = compiledTemplate();
+
+        $('.search__results').html(html);
     });
 
     // --- / Main

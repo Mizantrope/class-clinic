@@ -1444,6 +1444,44 @@
             </a>
         </script>
 
+        <script id="reivew" type="text/template7">
+            <div class="overlay">
+                <div class="review">
+                    <div class="review__content container">
+                        <div class="reviews swiper">
+                            <button class="review__close">
+                                <svg class="review__close-icon" viewBox="0 0 40 40">
+                                    <use href="#icon-close"></use>
+                                </svg>
+                            </button>
+                            <div class="reviews__inner">
+                                <div class="swiper-wrapper">
+                                    {{#each reviewsItems}}
+                                        <div class="reviews__item swiper-slide">
+                                            {{this}}
+                                        </div>
+                                    {{/each}}
+                                </div>
+                                <div class="btn-group justify-content-center">
+                                    <a href="#" class="btn btn--secondary" data-name="modal-close">Закрыть</a>
+                                </div>
+                            </div>
+                            <div class="swiper-arrow swiper-arrow--prev">
+                                <svg class="swiper-arrow__icon" viewBox="0 0 28 28">
+                                    <use href="#icon-back"></use>
+                                </svg>
+                            </div>
+                            <div class="swiper-arrow swiper-arrow--next">
+                                <svg class="swiper-arrow__icon" viewBox="0 0 28 28">
+                                    <use href="#icon-back"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </script>
+
         <!-- SVG Sprites (Можно вынести в отдельный файл при желании и вставлять) -->
         <svg xmlns="http://www.w3.org/2000/svg" style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
             <g id="icon-caret">
