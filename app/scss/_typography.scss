@@ -127,6 +127,7 @@ h1 + img {
 }
 
 h2 + div,
+h2 + table,
 h3 + .select,
 h3 + form,
 h3 + .cards {
@@ -146,9 +147,12 @@ h4 + * {
     margin-top: 5px;
 }
 
-
 .small-text + .text {
     margin-top: 5px;
+}
+
+.small-text + div {
+    margin-top: 30px;
 }
 
 @media (max-width: 991px) {
@@ -221,6 +225,7 @@ h4 + * {
     }
 
     h2 + div,
+    h2 + table,
     h3 + .select,
     h3 + p,
     h3 + form {
@@ -238,5 +243,9 @@ h4 + * {
 
     .small-text + .text {
         margin-top: 2px;
+    }
+
+    .small-text + div {
+        margin-top: 20px;
     }
 }

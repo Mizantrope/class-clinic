@@ -92,12 +92,12 @@
 }
 
 .select2-container--default .select2-results__option .select2-results__option {
-    padding-left: 20px;
+    padding-left: 30px;
 }
 
 .select2-container--default .select2-results__group {
     padding: 7px 20px;
-    background-color: #F8FCFD;
+    color: $color;
 }
 
 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single {

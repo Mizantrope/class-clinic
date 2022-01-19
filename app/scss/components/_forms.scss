@@ -27,6 +27,12 @@ textarea {
 
 
 .form {
+    &__group {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
     &__t {
         margin-bottom: 20px;
     }

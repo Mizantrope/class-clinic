@@ -10,10 +10,12 @@
         background-color: #fff;
 
         &:hover {
-            border-color: $gray;
+            &:not(.cards__item--active) {
+                border-color: $gray;
+            }
         }
 
-        &:active {
+        &--active {
             border-color: $light-blue;
         }
     }

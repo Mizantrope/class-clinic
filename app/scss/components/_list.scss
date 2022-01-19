@@ -273,17 +273,33 @@ ol {
     grid-template-columns: repeat(4, 1fr);
 
     &__item {
+        position: relative;
         transition: $transition-duration;
         padding: 20px;
+        overflow: hidden;
         border-radius: 10px;
         border: 1px solid #CDDBE2;
         background-color: #fff;
 
-        &:hover {
+        &::after {
+            content: ' ';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            transition: 0.45s;
+            width: 76px;
+            height: 76px;
+            border-radius: 76px;
             background-color: #F8FCFD;
+        }
 
+        &:hover {
             .branch-list__t {
                 color: $color;
+            }
+
+            &::after {
+                transform: scale(7);
             }
         }
     }
@@ -317,9 +333,24 @@ ol {
         transform: rotate(180deg);
     }
 
+    &__img,
+    &__t,
+    &__text {
+        position: relative;
+        z-index: 5;
+    }
+
     @media (max-width: 991px) {
         gap: 30px;
         grid-template-columns: repeat(3, 1fr);
+
+        &__item {
+            &::after {
+                width: 60px;
+                height: 60px;
+                border-radius: 60px;
+            }
+        }
 
         &__img {
             width: 60px;
@@ -333,6 +364,20 @@ ol {
 
         &__item {
             padding: 10px;
+
+            &::after {
+                top: 10px;
+                left: 10px;
+                width: 42px;
+                height: 42px;
+                border-radius: 42px;
+            }
+
+            &:hover {
+                &::after {
+                    transform: scale(11);
+                }
+            }
         }
 
         &__img {

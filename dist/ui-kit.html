@@ -792,163 +792,461 @@
 
             <!-- Main -->
             <main class="main">
-                <div class="breadcrumb">
-                    <div class="breadcrumb__inner container">
-                        <ul class="breadcrumb__list">
-                            <div class="swiper-wrapper">
-                                <li class="breadcrumb__item swiper-slide">
-                                    <a href="index.html" class="breadcrumb__link text-gray">Главная</a>
-                                </li>
-                                <li class="breadcrumb__item swiper-slide">Задать вопрос врачу</li>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
                 <div class="container">
-                    <h1>Задать вопрос врачу</h1>
+                    <h1>
+                        UI KIT
+                    </h1>
                     <section class="section">
-                        <div class="section__border steps">
-                            <div class="steps__list">
-                                <div class="steps__list-item active" data-name="nav-step-1">
-                                    <div class="steps__number"></div>
-                                    <div class="steps__text">Выбор врача</div>
-                                </div>
-                                <div class="steps__list-item" data-name="nav-step-2">
-                                    <div class="steps__number"></div>
-                                    <div class="steps__text">Задать вопрос</div>
-                                </div>
-                            </div>
-                            <div class="steps__content">
-                                
-                                <!-- Step 1 -->
-                                <div class="steps__content-item active" data-name="content-step-1">
-                                    <h3>Выберите врача, которому хотите задать вопрос</h3>
-                                    <div class="select">
-                                        <select name="doctors">
-                                            <option value="1">Проктологи</option>
-                                            <option value="2">Урологи</option>
-                                            <option value="3">Гинекологи</option>
-                                            <option value="4">Неврологи</option>
-                                            <option value="5">Дерматологи</option>
-                                            <option value="6">Косметологи</option>
-                                            <option value="7">Трихологи</option>
-                                            <option value="8">Гастроэнтерологи</option>
-                                            <option value="9">Терапевты</option>
-                                            <option value="10">Врачи УЗИ</option>
-                                        </select>
-                                    </div>
-                                    <div class="cards row">
-                                        <div class="col-lg-3 col-md-4 col-6">
-                                            <a class="cards__item" href="#" data-name="select-doctor">
-                                                <div class="cards__img">
-                                                    <div class="cards__cover" style="background-image: url('./images/doctors/proktology/zinkeeva.jpg');"></div>
-                                                </div>
-                                                <div class="cards__info">
-                                                    <div class="cards__t">Зинкеева Светлана Владимировна</div>
-                                                    <div class="cards__text small-text text-gray">Уролог-андролог, <br>Проктолог</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-3 col-md-4 col-6">
-                                            <a class="cards__item" href="#" data-name="select-doctor">
-                                                <div class="cards__img">
-                                                    <div class="cards__cover" style="background-image: url('./images/doctors/proktology/kuzovlev.jpg');"></div>
-                                                </div>
-                                                <div class="cards__info">
-                                                    <div class="cards__t">Кузовлёв Игорь Сергеевич</div>
-                                                    <div class="cards__text small-text text-gray">Проктолог</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-3 col-md-4 col-6">
-                                            <a class="cards__item" href="#" data-name="select-doctor">
-                                                <div class="cards__img">
-                                                    <div class="cards__cover" style="background-image: url('./images/doctors/proktology/volodchenkova.jpg');"></div>
-                                                </div>
-                                                <div class="cards__info">
-                                                    <div class="cards__t">Володченкова Наталья Дмитриевна</div>
-                                                    <div class="cards__text small-text text-gray">Проктолог</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-3 col-md-4 col-6">
-                                            <a class="cards__item" href="#" data-name="select-doctor">
-                                                <div class="cards__img">
-                                                    <div class="cards__cover" style="background-image: url('./images/doctors/proktology/fedorin.jpg');"></div>
-                                                </div>
-                                                <div class="cards__info">
-                                                    <div class="cards__t">Федорин Павел Игоревич</div>
-                                                    <div class="cards__text small-text text-gray">Колопроктолог</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="steps__content-actions">
-                                        <a href="#" class="btn btn--primary" data-name="next-step">Далее</a>
-                                    </div>
-                                </div>
-                                <!-- / Step 1 -->
-
-                                <!-- Step 2 -->
-                                <div class="steps__content-item" data-name="content-step-2">
-                                    <h3>Задайте вопрос</h3>
-                                    <form class="form">
-                                        <div class="form__row">
-                                            <div class="form__control">
-                                                <input type="text" class="form__input" id="name">
-                                                <label for="name" class="form__label">Имя</label>
-                                            </div>
-                                            <div class="form__control">
-                                                <input type="email" class="form__input" id="email">
-                                                <label for="email" class="form__label">Email</label>
-                                            </div>
-                                            <div class="form__textarea">
-                                                <div class="form__textarea-wrapper">
-                                                    <textarea name="question" id="q"></textarea>
-                                                    <label for="q" class="form__label">Ваш вопрос <span class="text-red">*</span></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="section__block">
-                                            <div class="form__checkbox">
-                                                <label class="form__checkbox-label">
-                                                    <input type="checkbox" class="form__checkbox-input">
-                                                    <span class="form__checkbox-box"></span>
-                                                    <span class="form__checkbox-name">Я хочу получить уведомление об ответе на Email.</span>
-                                                </label>
-                                            </div>
-                                            <div class="form__checkbox">
-                                                <label class="form__checkbox-label">
-                                                    <input type="checkbox" class="form__checkbox-input">
-                                                    <span class="form__checkbox-box"></span>
-                                                    <span class="form__checkbox-name">Я согласен с тем, что мои имя и вопрос будут опубликованы на сайте <a class="link" href="https://www.class-clinic.com/" target="_blank">class-clinic.com</a> и будут видны другим пользователям.</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <div class="steps__content-actions">
-                                        <a href="#" class="btn btn--secondary" data-name="prev-step">Назад</a>
-                                        <a href="#" class="btn btn--primary" data-name="finish-step">Отправить вопрос</a>
-                                    </div>
-                                </div>
-                                <!-- / Step 2 -->
-
-                                <!-- Step 3 -->
-                                <div class="steps__content-item" data-name="content-step-finish">
-                                    <h3 class="steps__t">Врач получил ваш вопрос!</h3>
-                                    <p>Когда врач ответит, ответ появится на странице <a class="link" href="faq.html">Вопрос-ответ</a>.</p>
-                                    <p>Если вы указали email, мы также пришлём ответ на вашу электронную почту.</p>
-                                </div>
-                                <!-- / Step 3 -->
-                            </div>
+                        <div class="section__block">
+                            <h2>Текст</h2>
+                            <h1>Заголовок 1 уровня</h1>
+                            <div class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto corporis iure quisquam recusandae aspernatur reprehenderit, tenetur delectus, laborum ipsam dicta architecto? Placeat accusantium temporibus ratione magni laborum? Iste, obcaecati fugit.</div>
+                            <a href="#" class="btn btn--primary">Кнопка</a>
+                        </div>
+                        <div class="section__block">
+                            <h2>Заголовок 2 уровня</h2>
+                            <div class="small-text">Lorem ipsum dolor sit amet.</div>
+                            <div class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto corporis iure quisquam recusandae aspernatur reprehenderit, tenetur delectus, laborum ipsam dicta architecto? Placeat accusantium temporibus ratione magni laborum? Iste, obcaecati fugit.</div>
+                            <a href="#" class="btn btn--primary">Кнопка</a>
+                        </div>
+                        <div class="section__block">
+                            <h3>Заголовок 3 уровня</h3>
+                            <div class="small-text text-gray">Серый цвет</div>
+                            <a href="#" class="link">Ссылка</a>
+                            <a href="#" class="link link--gray">Серая ссылка</a>
+                            <div class="text">Lorem ipsum dolor sit amet <a class="link" href="#">consectetur</a>, adipisicing elit. Iusto corporis iure quisquam recusandae aspernatur reprehenderit, tenetur delectus, laborum ipsam dicta architecto? Placeat accusantium temporibus ratione magni laborum? Iste, obcaecati fugit.</div>
+                            <a href="#" class="btn btn--primary">Кнопка</a>
+                        </div>
+                        <div class="section__block">
+                            <ul>
+                                <li>Какой то список</li>
+                                <li>Какой то список</li>
+                                <li>Какой то список</li>
+                                <li>Какой то список</li>
+                                <li>Какой то список</li>
+                            </ul>
+                            <a href="#" class="btn btn--primary">Кнопка</a>
                         </div>
                     </section>
                     <section class="section">
-                        <div class="row">
-                            <div class="col-xl-7 col-lg-8">
-                                <h2>Прочтите ответы врачей на вопросы других пользователей</h2>
-                                <div class="text">Возможно, кто-то уже задавал насущный для вас вопрос.</div>
-                                <a href="faq.html" class="btn btn--primary">Читать все ответы на вопросы</a>
+                        <div class="section__block">
+                            <h2>Кнопки</h2>
+                            <a href="#" class="btn btn--primary">Кнопка первичная</a>
+                            <a href="#" class="btn btn--secondary">Кнопка вторичная</a>
+                            <a href="#" class="btn btn--primary btn--block">Кнопка первичная на всю ширину</a>
+                            <a href="#" class="btn btn--secondary btn--block">Кнопка вторичная на всю ширину</a>
+                            <a href="#" class="btn btn--primary" disabled>Кнопка первичная</a>
+                            <a href="#" class="btn btn--secondary" disabled>Кнопка вторичная</a>
+                            <a href="#" class="btn btn--primary">
+                                <div class="btn__inner">
+                                    <span class="btn__text">Записаться на приём</span>
+                                    <div class="small-text highlight">(круглосуточно)</div>
+                                </div>
+                            </a>
+                            <a href="#" class="btn btn--secondary">
+                                <div class="btn__inner">
+                                    <span class="btn__text">Записаться на приём</span>
+                                    <div class="small-text highlight">(круглосуточно)</div>
+                                </div>
+                            </a>
+                            <a href="#" class="btn btn--primary btn--animated">
+                                <div class="btn__text">Кнопка</div>
+                                <div class="btn__progress">
+                                    <span></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="section__block">
+                            <h2>Поля</h2>
+                            <div class="form">
+                                <div class="form__group">
+                                    <div class="form__control">
+                                        <input type="text" class="form__input">
+                                        <label class="form__label">Имя</label>
+                                    </div>
+                                </div>
+                                <div class="form__group">
+                                    <div class="select">
+                                        <select name="doctor" id="doctor">
+                                            <option value="Отзыв о клинике">Отзыв о клинике</option>
+                                            <optgroup label="Гинекология">
+                                                <option value="Шеховцова Ирина Владимировна">Шеховцова Ирина Владимировна</option>
+                                                <option value="Сущих Галина Александровна">Сущих Галина Александровна</option>
+                                            </optgroup>
+                                            <optgroup label="Урология">
+                                                <option value="Арабов Шухрат Ибрагимович">Арабов Шухрат Ибрагимович </option>
+                                                <option value="Рачковский Сергей Сергеевич">Рачковский Сергей Сергеевич </option>
+                                            </optgroup>
+                                            <optgroup label="Проктология">
+                                                <option value="Зинкеева Светлана Владимировна">Зинкеева Светлана Владимировна </option>
+                                                <option value="Кузовлёв Игорь Сергеевич">Кузовлёв Игорь Сергеевич </option>
+                                                <option value="Володченкова Наталья Дмитриевна">Володченкова Наталья Дмитриевна </option>
+                                                <option value="Федорин Павел Игоревич">Федорин Павел Игоревич </option>
+                                            </optgroup>
+                                            <optgroup label="Неврология">
+                                                <option value="Авдеева Татьяна Борисовна">Авдеева Татьяна Борисовна</option>
+                                                <option value="Пенькова Анна Валерьевна">Пенькова Анна Валерьевна</option>
+                                            </optgroup>
+                                            <optgroup label="Терапия">
+                                                <option value="Арабова Робия Дамировна">Арабова Робия Дамировна</option>
+                                            </optgroup>
+                                            <optgroup label="Гастроэнтерология">
+                                                <option value="Арабова Робия Дамировна">Арабова Робия Дамировна</option>
+                                            </optgroup>
+                                            <optgroup label="Дерматология">
+                                                <option value="Омурзакова Алия Туратбековна">Омурзакова Алия Туратбековна</option>	
+                                                <option value="Стародубова Елена Олеговна">Стародубова Елена Олеговна</option>
+                                                <option value="Болотова Валерия Григорьевна">Болотова Валерия Григорьевна</option>
+                                            </optgroup>
+                                            <optgroup label="Косметология и трихология">
+                                                <option value="Омурзакова Алия Туратбековна">Омурзакова Алия Туратбековна</option>	
+                                                <option value="Стародубова Елена Олеговна">Стародубова Елена Олеговна</option>
+                                            </optgroup>
+                                            <optgroup label="УЗИ-диагностика">
+                                                <option value="Жерносек Ирина Константиновна">Жерносек Ирина Константиновна</option>
+                                                <option value="Мкртчян Лаура Григорьевна">Мкртчян Лаура Григорьевна</option>
+                                                <option value="Ерохина Анастасия Владимировна">Ерохина Анастасия Владимировна</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form__group">
+                                    <div class="form__control form__control--search">
+                                        <input type="text" class="form__input" placeholder="Поиск">
+                                    </div>
+                                </div>
+                                <div class="form__group">
+                                    <div class="form__textarea">
+                                        <div class="form__textarea-wrapper" style="overflow: hidden; outline: currentcolor none medium;" tabindex="1">
+                                            <textarea name="question" id="q" style="height:106px;"></textarea>
+                                            <label for="q" class="form__label">Ваш вопрос <span class="text-red">*</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__group">
+                                    <div class="form__checkbox">
+                                        <label class="form__checkbox-label">
+                                            <input type="checkbox" class="form__checkbox-input">
+                                            <span class="form__checkbox-box"></span>
+                                            <span class="form__checkbox-name">Я хочу получить уведомление об ответе на Email.</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__block">
+                            <h2>Пагинация</h2>
+                            <div class="section__pagination">
+                                <a href="#" class="section__pagination-item link link--gray">
+                                    <div class="section__pagination-icon">
+                                        <svg viewBox="0 0 28 28">
+                                            <use href="#icon-back"></use>
+                                        </svg>
+                                    </div>
+                                    Предыдущая
+                                </a>
+                                <a href="#" class="section__pagination-item link link--gray">
+                                    <div class="section__pagination-icon">
+                                        <svg viewBox="0 0 28 28">
+                                            <use href="#icon-back"></use>
+                                        </svg>
+                                    </div>
+                                    Следующая
+                                </a>
+                            </div>
+                        </div>
+                        <div class="section__block">
+                            <h2>Шаги</h2>
+                            <div class="section__border steps">
+                                <div class="steps__list">
+                                    <div class="steps__list-item active" data-name="nav-step-1">
+                                        <div class="steps__number"></div>
+                                        <div class="steps__text">Выбор врача</div>
+                                    </div>
+                                    <div class="steps__list-item" data-name="nav-step-2">
+                                        <div class="steps__number"></div>
+                                        <div class="steps__text">Задать вопрос</div>
+                                    </div>
+                                </div>
+                                <div class="steps__content">
+                                    
+                                    <!-- Step 1 -->
+                                    <div class="steps__content-item active" data-name="content-step-1">
+                                        <h3>Выберите врача, которому хотите задать вопрос</h3>
+                                        <div class="select">
+                                            <select name="doctors">
+                                                <option value="1">Проктологи</option>
+                                                <option value="2">Урологи</option>
+                                                <option value="3">Гинекологи</option>
+                                                <option value="4">Неврологи</option>
+                                                <option value="5">Дерматологи</option>
+                                                <option value="6">Косметологи</option>
+                                                <option value="7">Трихологи</option>
+                                                <option value="8">Гастроэнтерологи</option>
+                                                <option value="9">Терапевты</option>
+                                                <option value="10">Врачи УЗИ</option>
+                                            </select>
+                                        </div>
+                                        <div class="cards row">
+                                            <div class="col-lg-3 col-md-4 col-6">
+                                                <a class="cards__item" href="#" data-name="select-doctor">
+                                                    <div class="cards__img">
+                                                        <div class="cards__cover" style="background-image: url('./images/doctors/proktology/zinkeeva.jpg');"></div>
+                                                    </div>
+                                                    <div class="cards__info">
+                                                        <div class="cards__t">Зинкеева Светлана Владимировна</div>
+                                                        <div class="cards__text small-text text-gray">Уролог-андролог, <br>Проктолог</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-6">
+                                                <a class="cards__item" href="#" data-name="select-doctor">
+                                                    <div class="cards__img">
+                                                        <div class="cards__cover" style="background-image: url('./images/doctors/proktology/kuzovlev.jpg');"></div>
+                                                    </div>
+                                                    <div class="cards__info">
+                                                        <div class="cards__t">Кузовлёв Игорь Сергеевич</div>
+                                                        <div class="cards__text small-text text-gray">Проктолог</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-6">
+                                                <a class="cards__item" href="#" data-name="select-doctor">
+                                                    <div class="cards__img">
+                                                        <div class="cards__cover" style="background-image: url('./images/doctors/proktology/volodchenkova.jpg');"></div>
+                                                    </div>
+                                                    <div class="cards__info">
+                                                        <div class="cards__t">Володченкова Наталья Дмитриевна</div>
+                                                        <div class="cards__text small-text text-gray">Проктолог</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-6">
+                                                <a class="cards__item" href="#" data-name="select-doctor">
+                                                    <div class="cards__img">
+                                                        <div class="cards__cover" style="background-image: url('./images/doctors/proktology/fedorin.jpg');"></div>
+                                                    </div>
+                                                    <div class="cards__info">
+                                                        <div class="cards__t">Федорин Павел Игоревич</div>
+                                                        <div class="cards__text small-text text-gray">Колопроктолог</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="steps__content-actions">
+                                            <a href="#" class="btn btn--primary" data-name="next-step">Далее</a>
+                                        </div>
+                                    </div>
+                                    <!-- / Step 1 -->
+    
+                                    <!-- Step 2 -->
+                                    <div class="steps__content-item" data-name="content-step-2">
+                                        <h3>Задайте вопрос</h3>
+                                        <form class="form">
+                                            <div class="form__row">
+                                                <div class="form__control">
+                                                    <input type="text" class="form__input" id="name">
+                                                    <label for="name" class="form__label">Имя</label>
+                                                </div>
+                                                <div class="form__control">
+                                                    <input type="email" class="form__input" id="email">
+                                                    <label for="email" class="form__label">Email</label>
+                                                </div>
+                                                <div class="form__textarea">
+                                                    <div class="form__textarea-wrapper">
+                                                        <textarea name="question" id="q"></textarea>
+                                                        <label for="q" class="form__label">Ваш вопрос <span class="text-red">*</span></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="section__block">
+                                                <div class="form__checkbox">
+                                                    <label class="form__checkbox-label">
+                                                        <input type="checkbox" class="form__checkbox-input">
+                                                        <span class="form__checkbox-box"></span>
+                                                        <span class="form__checkbox-name">Я хочу получить уведомление об ответе на Email.</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form__checkbox">
+                                                    <label class="form__checkbox-label">
+                                                        <input type="checkbox" class="form__checkbox-input">
+                                                        <span class="form__checkbox-box"></span>
+                                                        <span class="form__checkbox-name">Я согласен с тем, что мои имя и вопрос будут опубликованы на сайте <a class="link" href="https://www.class-clinic.com/" target="_blank">class-clinic.com</a> и будут видны другим пользователям.</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div class="steps__content-actions">
+                                            <a href="#" class="btn btn--secondary" data-name="prev-step">Назад</a>
+                                            <a href="#" class="btn btn--primary" data-name="finish-step">Отправить вопрос</a>
+                                        </div>
+                                    </div>
+                                    <!-- / Step 2 -->
+    
+                                    <!-- Step 3 -->
+                                    <div class="steps__content-item" data-name="content-step-finish">
+                                        <h3 class="steps__t">Врач получил ваш вопрос!</h3>
+                                        <p>Когда врач ответит, ответ появится на странице <a class="link" href="faq.html">Вопрос-ответ</a>.</p>
+                                        <p>Если вы указали email, мы также пришлём ответ на вашу электронную почту.</p>
+                                    </div>
+                                    <!-- / Step 3 -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__block">
+                            <h2>Аккордеон</h2>
+                            <div class="accordeon accordeon--privacy">
+                                <div class="accordeon__item">
+                                    <div class="accordeon__head">
+                                        <div class="accordeon__name">1. Общие положения</div>
+                                    </div>
+                                </div>
+                                <div class="accordeon__item">
+                                    <div class="accordeon__head">
+                                        <div class="accordeon__name">2. Основные понятия, используемые в Политике</div>
+                                    </div>
+                                </div>
+                                <div class="accordeon__item">
+                                    <div class="accordeon__head">
+                                        <div class="accordeon__name">3. Основные права и обязанности Оператора</div>
+                                    </div>
+                                    <div class="accordeon__content">
+                                        <p>3.1. Оператор имеет право:</p>
+                                        <p>— получать от субъекта персональных данных достоверные информацию и/или документы, содержащие персональные данные;</p>
+                                        <p>— в случае отзыва субъектом персональных данных согласия на обработку персональных данных Оператор вправе продолжить обработку персональных данных без согласия субъекта персональных данных при наличии оснований, указанных в Законе о персональных данных;</p>
+                                        <p>— самостоятельно определять состав и перечень мер, необходимых и достаточных для обеспечения выполнения обязанностей, предусмотренных Законом о персональных данных и принятыми в соответствии с ним нормативными правовыми актами, если иное не предусмотрено Законом о персональных данных или другими федеральными законами.</p>
+                                        <p>3.2. Оператор обязан:</p>
+                                        <p>— предоставлять субъекту персональных данных по его просьбе информацию, касающуюся обработки его персональных данных;</p>
+                                        <p>— организовывать обработку персональных данных в порядке, установленном действующим законодательством РФ;</p>
+                                        <p>— публиковать или иным образом обеспечивать неограниченный доступ к настоящей Политике в отношении обработки персональных данных;</p>
+                                        <p>— принимать правовые, организационные и технические меры для защиты персональных данных от неправомерного или случайного доступа к ним, уничтожения, изменения, блокирования, копирования, предоставления, распространения персональных данных, а также от иных неправомерных действий в отношении персональных данных;</p>
+                                    </div>
+                                </div>
+                                <div class="accordeon__item">
+                                    <div class="accordeon__head">
+                                        <div class="accordeon__name">4. Основные понятия, используемые в Политике</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__block">
+                            <h2>Таблица</h2>
+                            <table>
+                                <tr>
+                                    <td>Ячейка 1</td>
+                                    <td>Ячейка 2</td>
+                                </tr>
+                                <tr>
+                                    <td>Ячейка 1</td>
+                                    <td>Ячейка 2</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="section__block">
+                            <h2>Таблицы расписания</h2>
+                            <div class="schedule">
+                                <div class="schedule__item">
+                                    <h3>Арабов Шухрат Ибрагимович</h3>
+                                    <table class="schedule__table">
+                                        <tbody><tr>
+                                            <td>Понедельник</td>
+                                            <td>8:00–14:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Вторник</td>
+                                            <td>8:00–14:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Среда</td>
+                                            <td>8:00–14:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Четверг</td>
+                                            <td>8:00–14:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Пятница</td>
+                                            <td>8:00–14:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Суббота</td>
+                                            <td>выходной</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Восресенье</td>
+                                            <td>выходной</td>
+                                        </tr>
+                                    </tbody></table>
+                                </div>
+                                <div class="schedule__item">
+                                    <h3>Рачковский Сергей Сергеевич</h3>
+                                    <table class="schedule__table">
+                                        <tbody><tr>
+                                            <td>Понедельник</td>
+                                            <td>11:00–19:30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Вторник</td>
+                                            <td>9:00–16:30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Среда</td>
+                                            <td>11:00–19:30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Четверг</td>
+                                            <td>11:00–19:30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Пятница</td>
+                                            <td>9:00–16:30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Суббота</td>
+                                            <td>9:00–16:30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Восресенье</td>
+                                            <td>выходной</td>
+                                        </tr>
+                                    </tbody></table>
+                                </div>
+                            </div>
+                            <div class="section__block">
+                                <h2>Галерея, слайдер</h2>
+                                <div class="small-text text-gray">Обращаю внимание, чтобы работала галерея, внизу должен быть подлючен шаблон типа template7, если где то его нет, то просто надо подключить и все заработает, тоже касается модалок.</div>
+                                <div class="certificates">
+                                    <div class="certificates__list swiper swiper-initialized swiper-horizontal swiper-pointer-events">
+                                        <div class="swiper-wrapper" id="swiper-wrapper-f485a07930015890" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
+                                            <a class="certificates__item swiper-slide swiper-slide-active" data-name="gallery" href="./images/licence-1.png" style="margin-right: 30px;" role="group" aria-label="1 / 4">
+                                                <img src="./images/licence-1-sm.png" alt="" class="certificates__img">
+                                            </a>
+                                            <a class="certificates__item swiper-slide swiper-slide-next" data-name="gallery" href="./images/licence-2.png" style="margin-right: 30px;" role="group" aria-label="2 / 4">
+                                                <img src="./images/licence-2-sm.png" alt="" class="certificates__img">
+                                            </a>
+                                            <a class="certificates__item swiper-slide" data-name="gallery" href="./images/licence-3.png" style="margin-right: 30px;" role="group" aria-label="3 / 4">
+                                                <img src="./images/licence-3-sm.png" alt="" class="certificates__img">
+                                            </a>
+                                            <a class="certificates__item swiper-slide" data-name="gallery" href="./images/licence-1.png" style="margin-right: 30px;" role="group" aria-label="4 / 4">
+                                                <img src="./images/licence-1-sm.png" alt="" class="certificates__img">
+                                            </a>
+                                        </div>
+                                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                                    <div class="swiper-arrow swiper-arrow--prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-f485a07930015890" aria-disabled="true">
+                                        <svg class="swiper-arrow__icon" viewBox="0 0 28 28">
+                                            <use href="#icon-back"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="swiper-arrow swiper-arrow--next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-f485a07930015890" aria-disabled="false">
+                                        <svg class="swiper-arrow__icon" viewBox="0 0 28 28">
+                                            <use href="#icon-back"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section__block">
+                                <h2>Модалки</h2>
+                                <a href="#" class="btn btn--primary" data-name="leave-review">Оставить отзыв</a>
                             </div>
                         </div>
                     </section>
@@ -1131,6 +1429,150 @@
                     <use href="#icon-up"></use>
                 </svg>
             </a>
+        </script>
+
+        <script id="gallery" type="text/template7">
+            <div class="overlay">
+                <div class="gallery">
+                    <div class="gallery__content container">
+                        <button class="gallery__close">
+                            <svg class="gallery__close-icon" viewBox="0 0 40 40">
+                                <use href="#icon-close"></use>
+                            </svg>
+                        </button>
+                        <div class="gallery__main swiper">
+                            <div class="swiper-wrapper">
+                                {{#each galleryList}}
+                                    <div class="gallery__item swiper-slide">
+                                        <img class="gallery__pic swiper-lazy" data-src="{{this}}" alt="">
+                                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                    </div>
+                                {{/each}}
+                            </div>
+                            <div class="swiper-arrow swiper-arrow--prev">
+                                <svg class="swiper-arrow__icon" viewBox="0 0 28 28">
+                                    <use href="#icon-back"></use>
+                                </svg>
+                            </div>
+                            <div class="swiper-arrow swiper-arrow--next">
+                                <svg class="swiper-arrow__icon" viewBox="0 0 28 28">
+                                    <use href="#icon-back"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="gallery__nav swiper">
+                            <div class="swiper-wrapper">
+                                {{#each galleryPreviewList}}
+                                    <div class="gallery__item swiper-slide" style="background-image: url({{this}})"></div>
+                                {{/each}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+        <script id="form-review" type="text/template7">
+            <div class="overlay">
+                <div class="modal">
+                    <div class="modal__content">
+                        <h2 class="modal__t">Оставить отзыв</h2>
+                        <button class="modal__close">
+                            <svg class="modal__close-icon" viewBox="0 0 40 40">
+                                <use href="#icon-close"></use>
+                            </svg>
+                        </button>
+                        <form class="form">
+                            <div class="text">Укажите ваши личные данные</div>
+                            <div class="form__row">
+                                <div class="form__control">
+                                    <input type="text" class="form__input" id="name">
+                                    <label for="name" class="form__label">Имя</label>
+                                </div>
+                                <div class="form__control">
+                                    <input type="text" class="form__input" id="card">
+                                    <label for="card" class="form__label">Номер карты пациента <span class="text-red">*</span></label>
+                                </div>
+                            </div>
+                            <div class="text">Вы можете указать врача или оставить отзыв о клинике в целом</div>
+                            <div class="select">
+                                <select name="doctor" id="doctor">
+                                    <option value="Отзыв о клинике">Отзыв о клинике</option>
+                                    <optgroup label="Гинекология">
+                                        <option value="Шеховцова Ирина Владимировна">Шеховцова Ирина Владимировна</option>
+                                        <option value="Сущих Галина Александровна">Сущих Галина Александровна</option>
+                                    </optgroup>
+                                    <optgroup label="Урология">
+                                        <option value="Арабов Шухрат Ибрагимович">Арабов Шухрат Ибрагимович </option>
+                                        <option value="Рачковский Сергей Сергеевич">Рачковский Сергей Сергеевич </option>
+                                    </optgroup>
+                                    <optgroup label="Проктология">
+                                        <option value="Зинкеева Светлана Владимировна">Зинкеева Светлана Владимировна </option>
+                                        <option value="Кузовлёв Игорь Сергеевич">Кузовлёв Игорь Сергеевич </option>
+                                        <option value="Володченкова Наталья Дмитриевна">Володченкова Наталья Дмитриевна </option>
+                                        <option value="Федорин Павел Игоревич">Федорин Павел Игоревич </option>
+                                    </optgroup>
+                                    <optgroup label="Неврология">
+                                        <option value="Авдеева Татьяна Борисовна">Авдеева Татьяна Борисовна</option>
+                                        <option value="Пенькова Анна Валерьевна">Пенькова Анна Валерьевна</option>
+                                    </optgroup>
+                                    <optgroup label="Терапия">
+                                        <option value="Арабова Робия Дамировна">Арабова Робия Дамировна</option>
+                                    </optgroup>
+                                    <optgroup label="Гастроэнтерология">
+                                        <option value="Арабова Робия Дамировна">Арабова Робия Дамировна</option>
+                                    </optgroup>
+                                    <optgroup label="Дерматология">
+                                        <option value="Омурзакова Алия Туратбековна">Омурзакова Алия Туратбековна</option>	
+                                        <option value="Стародубова Елена Олеговна">Стародубова Елена Олеговна</option>
+                                        <option value="Болотова Валерия Григорьевна">Болотова Валерия Григорьевна</option>
+                                    </optgroup>
+                                    <optgroup label="Косметология и трихология">
+                                        <option value="Омурзакова Алия Туратбековна">Омурзакова Алия Туратбековна</option>	
+                                        <option value="Стародубова Елена Олеговна">Стародубова Елена Олеговна</option>
+                                    </optgroup>
+                                    <optgroup label="УЗИ-диагностика">
+                                        <option value="Жерносек Ирина Константиновна">Жерносек Ирина Константиновна</option>
+                                        <option value="Мкртчян Лаура Григорьевна">Мкртчян Лаура Григорьевна</option>
+                                        <option value="Ерохина Анастасия Владимировна">Ерохина Анастасия Владимировна</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="form__textarea">
+                                <div class="form__textarea-wrapper">
+                                    <textarea name="question" id="q"></textarea>
+                                    <label for="q" class="form__label">Ваш вопрос <span class="text-red">*</span></label>
+                                </div>
+                            </div>
+                            <div class="section__block">
+                                <div class="form__checkbox">
+                                    <label class="form__checkbox-label">
+                                        <input type="checkbox" class="form__checkbox-input">
+                                        <span class="form__checkbox-box"></span>
+                                        <span class="form__checkbox-name">Я согласен с <a href="privacy.html" class="link">условиями обработки персональных данных.</a></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="btn-group justify-content-center">
+                                <a href="#" class="btn btn--primary" data-name="review-send">Отправить отзыв</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+        <script id="review-complete" type="text/template7">
+            <h2 class="modal__t">Спасибо!</h2>
+            <button class="modal__close">
+                <svg class="modal__close-icon" viewBox="0 0 40 40">
+                    <use href="#icon-close"></use>
+                </svg>
+            </button>
+            <div class="text">Мы получили ваш отзыв. Он будет опубликован после проверки модератором.</div>
+            <div class="btn-group justify-content-center">
+                <a href="#" class="btn btn--secondary" data-name="modal-close">Закрыть окно</a>
+            </div>
         </script>
 
         <!-- SVG Sprites (Можно вынести в отдельный файл при желании и вставлять) -->

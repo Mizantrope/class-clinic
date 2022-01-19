@@ -235,6 +235,20 @@ $(function () {
         });
     }
 
+    // Select doctor
+    $('[data-name="select-doctor"]').on('click', function (e) {
+        e.preventDefault();
+
+        let item = $(this);
+
+        if(!item.hasClass('cards__item--active')) {
+            item.addClass('cards__item--active');
+        }
+        else {
+            item.removeClass('cards__item--active');
+        }
+    });
+
     // Doctor about
     if(doctorAbout.length) {
         let item = $('.list__item', doctorAbout);
