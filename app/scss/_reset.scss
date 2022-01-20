@@ -20,6 +20,14 @@ body {
     font-size: 16px;
     line-height: 1.4;
     min-width: $min-width;
+    
+    &.zapis {
+        #layout {
+            @media (max-width: 434px) {
+                padding-bottom: 0;
+            }
+        }
+    }
 }
 
 .swipe-open,
